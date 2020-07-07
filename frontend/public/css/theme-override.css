@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'book';
+    /*font-display: fallback;*/
+    src: url('../fonts/book.otf');
+    font-weight: normal;
+    font-style: normal
+}
+
+
+html{
+	font-family: 'book';
+}

@@ -1,0 +1,766 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" ng-app="auctionMarketerApp">
+
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#">
+        <!-- META TAGS -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+        <meta name="format-detection" content="telephone=no">
+                    <meta property="og:image" content="../images/socmedlogo.jpg">
+        
+        <!-- Base URL -->
+        <script type="text/javascript">
+            window.baseurl = 'https://www.romanumismatics.com/';
+        </script>
+
+        <script src="../js/api.js" async defer></script>
+        <!-- JQUERY LIBRARY -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+
+        <!-- CSS MAIN STYLESHEET -->
+        <link href="../css/styles_2.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="../css/styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="../css/jquery-ui.min.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="../css/styles_1.css" rel="stylesheet" type="text/css" media="print">
+        <link href="../css/print-styles.css" rel="stylesheet" type="text/css" media="print">
+
+		<link rel="stylesheet" href="../css/all.css" crossorigin="anonymous">
+
+        <!-- THEME OVERRIDE MASTER CSS -->
+                <link href="../css/theme-override.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="../css/theme-override.css" rel="stylesheet" type="text/css" media="print">
+        
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="/templates/auction-marketer/css/ie8.css" />
+        <![endif]-->
+
+        <!-- EXTRA CSS STYLESHEETS -->
+        
+        <!-- FONTS -->
+        <link href="../css/css.css" rel="stylesheet" type="text/css">
+
+        <!-- EXTRA CSS RULES -->
+        <style type="text/css">
+            dt.message {
+                display: none;
+            }
+        </style>
+
+        <!-- JAVASCRIPT LIBRARY FILES -->
+        
+        <script type="text/javascript" src="../js/jquery.columnizer.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="../js/jquery.elevatezoom.js"></script>
+
+                    <script type="text/javascript" src="../js/jquery.superslides.min.js"></script>
+        
+				
+                    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+			<script type="text/javascript" src="../js/touchpunch.js"></script>
+        
+        <!-- JAVASCRIPT EXTRA FILES -->
+        <script type="text/javascript" src="../js/scripts_2.js"></script>
+
+		<!-- Pinterest JS File -->
+		<script type="text/javascript" async defer src="../js/pinit.js"></script>
+
+        
+        <!-- FONTS SCRIPTS -->
+        <script src="../js/igp1gog.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+        <!-- JAVASCRIPT GENERAL FUNCTIONS -->
+        <script type="text/javascript" language="javascript">
+            var formSubmit = false;
+
+            jQuery(document).ready(function() {
+
+                                 // Login Overlay Submit
+                jQuery(".overlay-holder .cbLoginButtonSpan input[type=submit]").click(function() {
+                    username = jQuery("#mod_login_username_login-form").val();
+                    password = jQuery("#mod_login_password_login-form").val();
+
+                    jQuery.ajax({
+                        type: "POST",
+                        url: "https://www.romanumismatics.com/index.php?option=com_myaccount&task=adamsLogin&tmpl=auction",
+                        data: {
+                            username: username,
+                            password: password
+                        }
+                    }).done(function(msg) {
+                        result = jQuery.parseJSON(msg);
+
+                        if (result.success == "true") {
+                            jQuery("#login-form_login-form").submit();
+                        } else {
+                            jQuery('<p class="login-error">' + result.msg + '</p>').insertBefore("#form-login-username");
+                        }
+                    });
+
+                    return false;
+                });
+
+                if (jQuery("div#cb_cb_comp_login div.componentheading:contains(Login)").length > 0) {
+                    jQuery('div.componentheading').after('<div class="not-logged-in-message"><p>You need to be logged in to access that page.</p></div>');
+                }
+
+                // Overlay Views
+                jQuery("a.sign-up").click(function() {
+                    jQuery("div.overlay-holder").fadeIn(200);
+                });
+
+                jQuery("div.close-btn a").click(function() {
+                    jQuery("div.overlay-holder").fadeOut(200);
+                });
+
+                jQuery("a#info-pur").click(function() {
+                    jQuery("div.overlay-holder-info").fadeIn(200);
+                });
+
+                jQuery("div.close-btn-info a").click(function() {
+                    jQuery("div.overlay-holder-info").fadeOut(200);
+                });
+
+                var regcomplete = jQuery("div.component-area div.componentheading:contains('Registration Complete!')");
+
+                
+                                                            });
+
+    //         function setSignUp() {
+    //             jQuery('#errorMessageContainerId').hide();
+				// var email = jQuery('#control_EMAIL').val();
+
+    //             if(isValidEmailAddress(email)) {
+    //                 jQuery('#signup-form-top').submit();
+    //             } else {
+    //                 jQuery('#errorMessageContainerId').show();
+    //                 return false;
+    //             }
+    //         }
+
+			function submitNewsletter() {
+
+				jQuery('#errorMessageContainerId').hide();
+				if(isValidEmailAddress(jQuery('#control_EMAIL').val()) && jQuery('#control_EMAIL').val() != '' && jQuery('#cb_firstname').val() != '' && jQuery('#cb_surname').val() != ''){
+					if (!formSubmit) {
+						jQuery.ajax({
+							url: jQuery('#base_url').val(),
+							type: 'POST',
+							data: {
+								option: 'com_myaccount',
+								task: 'setSignUpEmail',
+                                signup_email_address: jQuery('#control_EMAIL').val(),
+                                FName: jQuery('#cb_firstname').val(),
+								LName: jQuery('#cb_surname').val()
+							},
+						}).done(function(response) {
+							formSubmit = true;
+							jQuery('#signup-form-top').submit();
+						});
+
+						return formSubmit;
+					}
+				} else {
+					jQuery('#errorMessageContainerId').show();
+					alert('All fields are required');
+					return false;
+				}
+			}
+
+            function isValidEmailAddress(emailAddress) {
+                var pattern = new RegExp(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i);
+                return pattern.test(emailAddress);
+            };
+        </script>
+
+                
+                                        <script>
+                                                                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                
+                ga('create', 'UA-120858442-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+        
+        
+        
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="robots" content="noindex,follow">
+	
+	<title>The page you requested was not found on our site</title>
+	<link href="/" rel="canonical">
+	<link href="../favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="https://www.romanumismatics.com/search?format=opensearch" rel="search" title="Search Roma Numismatics" type="application/opensearchdescription+xml">
+	<style type="text/css">
+div.mod_search93 input[type="search"]{ width:auto; }
+	</style>
+
+                    <link rel="img_src" href="http://www.romanumismatics.com/images/SOCMEDlogo.jpgg">
+                
+        
+        
+        
+                    </head>
+
+    <body class="site
+        com_sh404sef error404 logged-out no-layout no-task itemid-101 home      " ng-controller="auctionCtrl" id="auctionCtrl" ng-class="{'logged-in': sharedService.userLoggedIn}">
+
+    		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="lg-holder global-overlay more-lot__btn-holder__button overlay-trigger-holder btn-holder" id="global-overlay-js">
+            <div class="overlay-container more-lot__btn-holder__button__container">
+                <div class="overlay-container__wrapper more-lot__btn-holder__button__container__wrapper cf">
+                    <span class="icons-close close-cross"></span>
+                    <div id="overlay-message" ng-bind-html="overlayMessage"></div>
+                    <div class="overlay-content" dynamic="" ng-bind-html="overlay.html"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-wrapper" id="top">
+            <div class="am-stats-section">
+                                    
+                            </div>
+
+            <div class="header-section cf">
+                <div class="header-left">
+                    <ul class="header-links">
+                        <li class="account" style="display: none">
+                            <a href="https://www.romanumismatics.com/index.php?option=com_myaccount&view=mydashboard" class="account-link desk-view primary-btn" title="My Account">My Account</a>
+                            <a href="https://www.romanumismatics.com/index.php?option=com_myaccount&view=mydashboard" class="account-link mobile-view" title="My Account">
+                                <!-- <img src="https://www.romanumismatics.com/images/palm-account-icon.png" alt="My Account" title=" My Account" /> -->
+                                <svg style="width:18px;" alt="My Account" title=" My Account" id="svg-icon__profile" data-name="Profile Icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 23 28.67"><defs><style>.cls-1{stroke-width: 0px;fill:#3c3c3b;}</style></defs><title>Profile Icon</title><path class="cls-1" d="M11.12,27.31A13.32,13.32,0,0,1,3.6,25a4.63,4.63,0,0,1-2.09-2.8,6.12,6.12,0,0,1,0-1.85,21.49,21.49,0,0,1,1.13-5,4.43,4.43,0,0,1,2.52-2.65c.14-.06.29-.11.43-.18a1.4,1.4,0,0,1,1.8.26A6.27,6.27,0,0,0,16,12.37a.47.47,0,0,1,.54-.13,5.08,5.08,0,0,1,3.14,2,10.65,10.65,0,0,1,1,2.43,20.54,20.54,0,0,1,.83,4.89A2.94,2.94,0,0,1,21,23.32a7.62,7.62,0,0,1-3.16,2.57A14.74,14.74,0,0,1,11.12,27.31Z"><path class="cls-1" d="M17.07,7c-.15,2.74-1.17,4.64-3.44,5.69A5.31,5.31,0,0,1,7,10.71,6.14,6.14,0,0,1,8.07,2.59,5.4,5.4,0,0,1,16.62,5,14.5,14.5,0,0,1,17.07,7Z"/></path></svg>
+                            </a>
+                        </li>
+                        <li class="logout" style="display: none">
+                            <a href="https://www.romanumismatics.com/index.php?option=com_bidders&task=logoutUser" class="sign-out desk-view tertiary-btn" title="Sign Out">Log Out</a>
+                            <a href="https://www.romanumismatics.com/index.php?option=com_bidders&task=logoutUser" class="sign-out mobile-view" title="Log Out">
+                                <!-- <img src="https://www.romanumismatics.com/images/palm-logout-icon.png" alt="Sign Out" title="Sign Out" /> -->
+                                <svg style="width:18px;" alt="Log Out" title="Log Out" id="svg-icon__logout" data-name="Logout Icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 22.17 28.33"><defs><style>.cls-1{fill:#3c3c3b;}</style></defs><title>Logout Icon</title><path class="cls-1" d="M21.68,1.36V27H5.11V22.22H6.94v2.87H19.8V3.24H7V6.12H5.11V1.36Z"><path class="cls-1" d="M8.4,20.07.49,14.16l7.91-5.9V12h9v4.38h-.43c-2.69,0-5.37,0-8.06,0-.37,0-.49.09-.48.47C8.42,17.86,8.4,18.91,8.4,20.07Z"/></path></svg>
+                            </a>
+                        </li>
+
+                        <li class="signup" style="">
+                            <a href="https://www.romanumismatics.com/index.php?option=com_comprofiler&task=registers" class="sign-up desk-view tertiary-btn" title="Sign Up">Sign Up</a>
+                            <a href="https://www.romanumismatics.com/index.php?option=com_comprofiler&task=registers" class="sign-up mobile-view" title="Sign Up">
+                                <!-- <img src="https://www.romanumismatics.com/images/palm-account-plus-icon.png" alt="Signup" title="Signup"> -->
+                                <svg style="width:18px;" alt="Signup" title="Signup" id="svg-icon__new-account" data-name="New Account Icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 23 28.67"><defs><style>.cls-1{stroke-width: 0px;fill:#3c3c3b;}.cls-2{fill:none;stroke:#3c3c3b;stroke-linecap:square;stroke-miterlimit:10;}</style></defs><title>New Account Icon</title><path class="cls-1" d="M11.12,27.31A13.32,13.32,0,0,1,3.6,25a4.63,4.63,0,0,1-2.09-2.8,6.12,6.12,0,0,1,0-1.85,21.49,21.49,0,0,1,1.13-5,4.43,4.43,0,0,1,2.52-2.65c.14-.06.29-.11.43-.18a1.4,1.4,0,0,1,1.8.26A6.27,6.27,0,0,0,16,12.37a.47.47,0,0,1,.54-.13,5.08,5.08,0,0,1,3.14,2,10.65,10.65,0,0,1,1,2.43,20.54,20.54,0,0,1,.83,4.89A2.94,2.94,0,0,1,21,23.32a7.62,7.62,0,0,1-3.16,2.57A14.74,14.74,0,0,1,11.12,27.31Z"><path class="cls-1" d="M17.07,7c-.15,2.74-1.17,4.64-3.44,5.69A5.31,5.31,0,0,1,7,10.71,6.14,6.14,0,0,1,8.07,2.59,5.4,5.4,0,0,1,16.62,5,14.5,14.5,0,0,1,17.07,7Z"><line class="cls-2" x1="19.4" y1="1.95" x2="19.4" y2="5.74"><line class="cls-2" x1="21.29" y1="3.85" x2="17.52" y2="3.85"/></line></path></path></svg>
+                            </a>
+                        </li>
+                        <li class="login" style="">
+                            <a href="https://www.romanumismatics.com/" class="login-in desk-view primary-btn login-btn-top-menu" title="Login">Login</a>
+                            <a href="https://www.romanumismatics.com/index.php?option=com_comprofiler&task=login&return=aW5kZXgucGhwP29wdGlvbj1jb21fbXlhY2NvdW50JnZpZXc9bXlhY2NvdW50" class="login-in mobile-view login-btn-top-menu" title="Login">
+                                <!-- <img src="https://www.romanumismatics.com/images/palm-login-icon.png" alt="Login" title="Login"> -->
+                                <svg style="width:18px;" alt="Login" title="Login" id="svg-icon__logout" data-name="Logout Icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 22.17 28.33"><defs><style>.cls-1{stroke-width: 0px;fill:#3c3c3b;}</style></defs><title>Logout Icon</title><path class="cls-1" d="M21.68,1.36V27H5.11V22.22H6.94v2.87H19.8V3.24H7V6.12H5.11V1.36Z"><path class="cls-1" d="M9.44,8.26l7.92,5.91-7.91,5.9v-3.7h-9V12H.91C3.6,12,6.28,12,9,12c.37,0,.49-.09.48-.47C9.42,10.47,9.44,9.42,9.44,8.26Z"/></path></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-middle">
+                    <div class="logo-holder">
+                        <a href="https://www.romanumismatics.com/">
+                            <img class="logo" src="../images/roma-logo.jpg" title="Roma Numismatics" alt="Roma Numismatics">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="header-right-links">
+                        <li class="menu-trigger">
+                            <a href="#" title="Menu Link" class="mobile-view">
+                                <!-- <img class="show" src="https://www.romanumismatics.com/images/palm-menu-icon.png" alt="Menu" title="Menu" /> -->
+                                <svg style="width:18px;padding-top:2px;" alt="Menu" title="Menu" class="show" id="svg-icon__menu" data-name="Menu Icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 35.17 29.17"><defs><style>.cls-1{stroke-width: 0px;fill:#3c3c3b;}</style></defs><title>Menu Icon</title><path class="cls-1" d="M34,1.65V7H1.17V1.65Z"><path class="cls-1" d="M34,11.87v5.42H1.17V11.87Z"><path class="cls-1" d="M34,22.1v5.42H1.18V22.1Z"/></path></path></svg>
+                                <!-- <img class="close" src="https://www.romanumismatics.com/images/palm-close-icon.png" alt="Menu" title="Menu" /> -->
+                                <svg alt="Menu" title="Menu" class="close" style="width:18px;padding-top:1px;" id="svg-icon__close" data-name="Close Icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 31.17 28.17"><defs><style>.cls-1{fill:none;stroke:#3c3c3b;stroke-linecap:square;stroke-miterlimit:10;stroke-width:4.6px;}</style></defs><title>Close Icon</title><line class="cls-2" x1="4.48" y1="4.06" x2="26.69" y2="24.21"><line class="cls-2" x1="26.6" y1="3.96" x2="4.65" y2="24.21"/></line></svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="search-box-top">
+                                                    		<div class="moduletable">
+						<div class="search mod_search93">
+	<form action="https://www.romanumismatics.com/index.php?option=com_bidders" method="get" class="form-inline">
+		<label for="mod-search-searchword" class="element-invisible"> </label> <input name="keyword" id="mod-search-searchword" maxlength="200" class="inputbox search-query" type="search" size="20" placeholder="click to search »"><a href="https://www.romanumismatics.com/index.php?option=com_bidders&view=advanced_search" title="Advanced Search">Advanced Search</a> <input type="image" alt="Search" class="button" src="data:image/svg+xml;base64,PHN2ZyBzdHlsZT0id2lkdGg6MThweDsiIGNsYXNzPSJzaG93IiBhbHQ9Ik1lbnUiIHRpdGxlPSJNZW51IiBpZD0ic3ZnLWljb25fX3NlYXJjaCIgZGF0YS1uYW1lPSJTZWFyY2ggSWNvbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjkuMTcgMjguNjciPjxkZWZzPjxzdHlsZT4uY2xzLTF7c3Ryb2tlLXdpZHRoOiAwcHg7ZmlsbDojM2MzYzNiO308L3N0eWxlPjwvZGVmcz48dGl0bGU+U2VhcmNoIEljb248L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE5LjMzLDE2LjQ3YTMsMywwLDAsMSwuMzQuMjZsNy43NSw3Ljc1YS44My44MywwLDAsMSwwLDEuMzZxLS42NS42Ny0xLjMyLDEuMzJhLjg0Ljg0LDAsMCwxLTEuMzgsMEwxNywxOS4zOGEyLjYyLDIuNjIsMCwwLDEtLjI0LS4zMyw5LjgxLDkuODEsMCwwLDEtOCwxLjM5QTkuNTUsOS41NSwwLDAsMSwzLjEsMTYuNSw5LjgxLDkuODEsMCwwLDEsMTcsMyw5Ljg5LDkuODksMCwwLDEsMTkuMzMsMTYuNDdabS0xLTUuNDhhNy4xNSw3LjE1LDAsMSwwLTcuMDcsNy4xMkE3LjE1LDcuMTUsMCwwLDAsMTguMzMsMTFaIi8+PC9zdmc+" onclick="this.form.searchword.focus();">		<input type="hidden" name="task" value="search">
+		<input type="hidden" name="option" value="com_bidders">
+	</form>
+</div>
+		</div>
+	
+                                                <div class="search-trigger">
+                            <a class="mobile-view" href="#" title="Search">
+                                <!-- <img src="https://www.romanumismatics.com/images/search-icon.png" alt="Search" title="Search"> -->
+                                <svg style="width:18px;" class="show" alt="Menu" title="Menu" id="svg-icon__search" data-name="Search Icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 29.17 28.67"><defs><style>.cls-1{stroke-width: 0px;fill:#3c3c3b;}</style></defs><title>Search Icon</title><path class="cls-1" d="M19.33,16.47a3,3,0,0,1,.34.26l7.75,7.75a.83.83,0,0,1,0,1.36q-.65.67-1.32,1.32a.84.84,0,0,1-1.38,0L17,19.38a2.62,2.62,0,0,1-.24-.33,9.81,9.81,0,0,1-8,1.39A9.55,9.55,0,0,1,3.1,16.5,9.81,9.81,0,0,1,17,3,9.89,9.89,0,0,1,19.33,16.47Zm-1-5.48a7.15,7.15,0,1,0-7.07,7.12A7.15,7.15,0,0,0,18.33,11Z"/></svg>
+                            </a>
+                        </div>
+						<div class="advanced-search-link">
+							<a href="https://www.romanumismatics.com/index.php?option=com_bidders&view=advanced_search" title="Advanced Search">Advanced Search</a>
+						</div>
+                       <!--  <a class="advanced-search-link" href="https://www.romanumismatics.com/index.php?option=com_auction&view=advanced_search">Advanced Search</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation header-nav">
+                                    
+<ul class="menu">
+<li class="item-378 deeper parent"><span class="separator ">Auctions</span>
+<ul><li class="item-425"><a href="/upcoming-auctions">Current Auctions</a></li><li class="item-158"><a href="/index.php?option=com_calender&amp;view=archives" title="Archive ">Past Auctions</a></li><li class="item-440"><a href="/index.php?option=com_calender&amp;view=ecatalogue">E-Catalogues</a></li></ul></li><li class="item-210"><a href="/buying" title="Buying">Buying</a></li><li class="item-211"><a href="/selling" title="Selling">Selling</a></li><li class="item-342"><a href="/departments/" title="Departments ">Departments</a></li><li class="item-304 deeper parent"><span class="separator ">Services</span>
+<ul><li class="item-426"><a href="/auction-representation">Auction Representation</a></li><li class="item-427"><a href="/authentication-valuation">Authentication and Valuation</a></li><li class="item-428"><a href="/conservation-service">Conservation Service</a></li></ul></li><li class="item-399"><a href="/index.php?option=com_timed_auction&amp;task=getBuyNowSale">Buy Now</a></li><li class="item-155"><a href="/history" title="About us">About Us</a></li><li class="item-400 deeper parent"><span class="separator ">Resources</span>
+<ul><li class="item-412"><a href="/index.php?option=com_bibliography&amp;view=bibliography">Bibliography</a></li><li class="item-414"><a href="/historicarticle">Historical Articles</a></li></ul></li><li class="item-196"><a href="/contact-us" title="Contact us">Contact</a></li><li class="item-101 current active"><a href="/">Home</a></li><li class="item-411"><a href="#">Newsletter</a></li></ul>
+
+                            </div>
+
+							<div class="quick_email_signup_container">
+					<div class="quick_email_signup-inner cf">
+						<form id="signup-form-top" method="post" action="https://www.romanumismatics.com/email-quick-signup" onsubmit="return submitNewsletter()">
+							<label for="Email">Sign Up To Our Newsletter</label>
+							<div class="input-names">
+	                            <input type="text" id="cb_firstname" name="FName" placeholder="Enter first name">
+								<input type="text" id="cb_surname" name="LName" placeholder="Enter last name">
+	                            <input type="text" id="control_EMAIL" name="Email" placeholder="Enter email address">
+								<input id="newsletterSignup" type="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+				</div>
+			
+                            
+<li class="login-bidbasket" style="display: none;">
+	<div class="bid-basket">
+		<img src="../images/basket-icon.png" alt="View All Bids" title="View All Bids" width="20">
+	</div>
+
+	<div class="login-link bid_submit">
+		<a class="btn bid-breakdown-btn" href="https://www.romanumismatics.com/index.php?option=com_timed_auction&view=mybuynowbids" alt="View All Bids">Basket</a>
+	</div>
+
+	<div class="total-bids">
+		<span class="basket-text">Total Items: </span>&nbsp;<span class="total_bids" ng-bind="sharedService.totalBids">0</span>
+	</div>
+
+	<div class="bid-amount">
+		<span class="basket-text-amount">Total Amount: </span>&nbsp;<span class="bid_price" ng-bind="(sharedService.totalBidAmount | number:2)">&pound;0.00</span>
+	</div>
+</li>
+
+<!-- <li class="login-bidbasket" style="display: none;">
+	<div class="bid-basket">
+		<img src="https://www.romanumismatics.com/images/basket-icon.png" alt="View All Bids" title="View All Bids" width="20">
+		<p>Bid Basket</p>
+	</div>
+
+	<div class="total-bids">
+		<span class="basket-text">Total Bids: </span>&nbsp;<span class="total_bids" ng-bind="totalBids">0</span>
+	</div>
+
+	<div class="bid-amount">
+		<span class="basket-text-amount">Total Bid Amount: </span>&nbsp;<span class="bid_price" ng-bind="totalBidAmount">&pound;0</span>
+	</div>
+
+	<div class="login-link bid_submit">
+		<a class="btn bid-breakdown-btn" href="https://www.romanumismatics.com/index.php?option=com_myaccount&view=currentbids&layout=basket" alt="View All Bids">Breakdown</a>
+		<a class="btn submit-bids-btn" href="https://www.romanumismatics.com/index.php?option=com_bidders&task=submitBids&da52475fdb076aec26d13933a80cc57c=1" ng-click="submittingBidsOverlay();">Submit Bids</a>
+	</div>
+</li> -->
+                    </div>
+
+                    <div class="page cf">
+
+                <!--                     <div class="banner-container main-banner-container home-banner">
+                        		<div class="moduletable">
+						
+<div class="banner-loading">
+	<div class="sk-folding-cube">
+		<div class="sk-cube1 sk-cube"></div>
+		<div class="sk-cube2 sk-cube"></div>
+		<div class="sk-cube4 sk-cube"></div>
+		<div class="sk-cube3 sk-cube"></div>
+	</div>
+</div>
+
+<div class="banner-wrapper homepage-banner-wrapper top-section" id="slides" style="padding-top: 0;">
+	<ul class="slides-container">
+			</ul>
+	
+
+	<nav class="slides-navigation">
+		<a href="#" class="prev" title="Previous">Previous</a>
+		<a href="#" class="next" title="Next">Next</a>
+	</nav>
+</div>
+
+<style>
+	 .top-section {
+		 padding-top: 0!important;
+	 }
+</style>		</div>
+	
+
+                        <div class="scroll-holder scroll-bottom">
+                            <a href="#">
+                                <span class="scroll__circle-arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                 -->
+
+                                    		<div class="moduletable">
+						
+<div class="auctions-banner-container">
+	<div class="auctions-banner-inner">
+					<div class="auction-container previous-auctions">
+				<div class="image-container">
+					<img src="../images/homepage_208.jpg" title="Previous Auction" alt="Previous Auction">
+				</div>
+				<div class="button-container">
+					<a href="https://www.romanumismatics.com/index.php?option=com_timed_auction&auction_id=62&gridtype=listview" title="View Results">View Results</a>
+										<a title="Buy Unsolds" href="https://www.romanumismatics.com/index.php?option=com_timed_auction&auction_id=62&gridtype=listview">Buy Unsolds</a>
+								</div>
+			</div>
+		
+								<div class="auction-container upcoming-auction">
+				<div class="image-container">
+					<img src="../images/homepage_200.jpg" title="Upcoming Auction" alt="Upcoming Auction">
+				</div>
+				<div class="button-container">
+											<a href="https://www.romanumismatics.com/index.php?option=com_timed_auction&auction_id=54&gridtype=listview" title="View Lots">View Lots</a>
+						<a title="Remind me" href="https://www.romanumismatics.com/index.php?option=com_calender&view=ocdownload&title=E-Sale+55&auction=200&viewing=%5Cn&date=2019-04-18">Remind Me</a>
+									</div>
+			</div>
+								<div class="auction-container upcoming-auction">
+				<div class="image-container">
+					<img src="../images/homepage_209.jpg" title="Upcoming Auction" alt="Upcoming Auction">
+				</div>
+				<div class="button-container">
+											<a href="https://www.romanumismatics.com/index.php?option=com_timed_auction&auction_id=63&gridtype=listview" title="Preview Lots">Preview Lots</a>
+						<a href="/selling" title="Consign Now">Consign Now</a>
+									</div>
+			</div>
+			</div>
+
+	<!-- Scroll Holder -->
+	<div class="scroll-bottom-holder">
+		<div class="scroll-icon-holder">
+			<span class="scroll__circle-arrow" id="jquery-scroll-featured" style="background-image: url('../images/banner-scroll-button.png')"></span>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	jQuery('#jquery-scroll-featured').click(function() {
+		jQuery('html, body').animate({
+			scrollTop: jQuery('.featured_lots_container').offset().top + 'px'
+		}, 'fast');
+	});
+</script>
+		</div>
+	
+                
+                <div class="item-page">
+
+
+                                                                                            		<div class="moduletable">
+						
+
+<div class="featured_lots_container">
+	<div class="featured-lot-inner-container">
+		
+		<div class="title-container">
+			<h1>Featured Lots</h1>
+		</div>
+					<div class="arrow-container">
+				<img src="../images/featured-lots-prev.png" class="prev-arrow" alt="Previous">
+			</div>
+			<div class="featured-lots-slides-container">
+									<div class="featured_lot">
+						<div class="featured_lots_image">
+																					<a href="/200-lot-340-lesbos-mytilene-el-hekte?auction_id=54&amp;view=lot_detail">
+									<img src="../images/9026.8.8_1.jpg" alt="featured lots" width="200">
+								</a>
+													</div>
+
+						<div class="homepage_block_content">
+							<p class="lot-headline"><strong>A Magnificent Depiction of Silenos</strong></p>
+							<p class="lot-number">E-Sale 55, Lot 340</p>
+							<p class="lot-name">
+								<a href="/200-lot-340-lesbos-mytilene-el-hekte?auction_id=54&amp;view=lot_detail">
+									Lesbos, Mytilene EL Hekte.								</a>
+							</p>
+							<p class="estimate"><b>Estimate&nbsp;£2,500</b></p>
+							<p class="estimate-currencies">($3,270&nbsp;&nbsp;&nbsp;€2,898)</p>
+							<!-- <p class="hammer-price"><b>Hammer Price&nbsp;&nbsp;&nbsp;£0.00</b></p> -->
+						</div>
+					</div>
+									<div class="featured_lot">
+						<div class="featured_lots_image">
+																					<a href="/200-lot-681-augustus-av-aureus?auction_id=54&amp;view=lot_detail">
+									<img src="../images/4001.188.14_1.jpg" alt="featured lots" width="200">
+								</a>
+													</div>
+
+						<div class="homepage_block_content">
+							<p class="lot-headline"><strong>A Beautiful Aureus of Augustus</strong></p>
+							<p class="lot-number">E-Sale 55, Lot 681</p>
+							<p class="lot-name">
+								<a href="/200-lot-681-augustus-av-aureus?auction_id=54&amp;view=lot_detail">
+									Augustus AV Aureus.								</a>
+							</p>
+							<p class="estimate"><b>Estimate&nbsp;£6,500</b></p>
+							<p class="estimate-currencies">($8,503&nbsp;&nbsp;&nbsp;€7,534)</p>
+							<!-- <p class="hammer-price"><b>Hammer Price&nbsp;&nbsp;&nbsp;£0.00</b></p> -->
+						</div>
+					</div>
+									<div class="featured_lot">
+						<div class="featured_lots_image">
+																					<a href="/200-lot-719-nero-av-aureus?auction_id=54&amp;view=lot_detail">
+									<img src="../images/9004.178.1_1.jpg" alt="featured lots" width="200">
+								</a>
+													</div>
+
+						<div class="homepage_block_content">
+							<p class="lot-headline"><strong>A Fine Style Aureus of Nero</strong></p>
+							<p class="lot-number">E-Sale 55, Lot 719</p>
+							<p class="lot-name">
+								<a href="/200-lot-719-nero-av-aureus?auction_id=54&amp;view=lot_detail">
+									Nero AV Aureus.								</a>
+							</p>
+							<p class="estimate"><b>Estimate&nbsp;£3,500</b></p>
+							<p class="estimate-currencies">($4,578&nbsp;&nbsp;&nbsp;€4,057)</p>
+							<!-- <p class="hammer-price"><b>Hammer Price&nbsp;&nbsp;&nbsp;£0.00</b></p> -->
+						</div>
+					</div>
+							</div>
+			<div class="arrow-container">
+				<img src="../images/featured-lots-next.png" class="next-arrow" alt="Next">
+			</div>
+		</div>
+</div>
+
+
+<!--<script>
+JQuery('.featured-lots-slides-container').slick({
+    infinite: true,
+    speed: 700,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+	nextArrow: '.next-arrow',
+	prevArrow: '.prev-arrow',
+	responsive: [
+		{
+			breakpoint: 800,
+			settings: {
+				slidesToShow: 3
+			}
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint: 450,
+			settings: {
+				slidesToShow: 1
+			}
+		}
+	]
+ });
+</script>-->		</div>
+	
+                                            
+                                            		<div class="moduletable">
+						
+	<section class="homepage_blocks">
+		<h2 class="h1">Buying And Selling</h2>
+
+		<ul class="homepage_block_items block_one_style_one block_two_style_one block_three_style_one">
+											<li class="homepage_block_item style_one">
+					<div class="homepage_block_image">
+						<a href="/buying" title="Buying">
+							<img src="../images/buying.jpg" alt="Buying">
+						</a>
+					</div>
+
+					<div class="homepage_block_content">
+						<h2>
+							<a href="/buying" title="Buying">
+								Buying							</a>
+						</h2>
+						<p>We make buying at auction easy and enjoyable - find out why</p>
+					</div>
+				</li>
+			
+											<li class="homepage_block_item style_one">
+					<div class="homepage_block_image">
+						<a href="/selling" title="Selling">
+							<img src="../images/1selling.jpg" alt="Selling">
+						</a>
+					</div>
+
+					<div class="homepage_block_content">
+						<h2>
+							<a href="/selling" title="Selling">
+								Selling							</a>
+						</h2>
+						<p>Selling made simple - find out how</p>
+					</div>
+				</li>
+			
+											<li class="homepage_block_item style_one">
+					<div class="homepage_block_image">
+						<a href="/valuations" title="Valuations">
+							<img src="../images/1valuations.jpg" alt="Valuations">
+						</a>
+					</div>
+
+					<div class="homepage_block_content">
+						<h2>
+							<a href="/valuations" title="Valuations">
+								Valuations							</a>
+						</h2>
+						<p>Submit items for pre sale valuation</p>
+					</div>
+				</li>
+					</ul>
+	</section>
+
+
+	<section class="homepage_blocks">
+		<h2 class="h1">Resources</h2>
+
+		<ul class="homepage_block_items block_one_style_one block_two_style_one block_three_style_one">
+											<li class="homepage_block_item style_one">
+					<div class="homepage_block_image">
+						<a href="/bibliography" title="Bibliography">
+							<img src="../images/bibliography.jpg" alt="Bibliography">
+						</a>
+					</div>
+
+					<div class="homepage_block_content">
+						<h2>
+							<a href="/bibliography" title="Bibliography">
+								Bibliography							</a>
+						</h2>
+						<p>Access to our extensive bibliography</p>
+					</div>
+				</li>
+			
+											<li class="homepage_block_item style_one">
+					<div class="homepage_block_image">
+						<a href="/" title="Mints of the Ancient World">
+							<img src="../images/mints.jpg" alt="Mints of the Ancient World">
+						</a>
+					</div>
+
+					<div class="homepage_block_content">
+						<h2>
+							<a href="/" title="Mints of the Ancient World">
+								Mints of the Ancient World							</a>
+						</h2>
+						<p>Coming Soon</p>
+					</div>
+				</li>
+			
+											<li class="homepage_block_item style_one">
+					<div class="homepage_block_image">
+						<a href="/historicarticles?task=historicarticles" title="Historical Articles">
+							<img src="../images/historical.jpg" alt="Historical Articles">
+						</a>
+					</div>
+
+					<div class="homepage_block_content">
+						<h2>
+							<a href="/historicarticles?task=historicarticles" title="Historical Articles">
+								Historical Articles							</a>
+						</h2>
+						<p>Find out more</p>
+					</div>
+				</li>
+					</ul>
+	</section>
+
+		</div>
+	
+                    
+                </div>
+
+                <div id="system-message-container">
+	</div>
+
+                <h1>Bad karma: we can't find that page!</h1>
+<p>You asked for <strong>https://www.romanumismatics.com/templates/auction-marketer/images/header/retail-site.svg</strong>, but despite our computers looking very hard, we could not find it. What happened ?</p>
+<ul>
+<li>the link you clicked to arrive here has a typo in it</li>
+<li>or somehow we removed that page, or gave it another name</li>
+<li>or, quite unlikely for sure, maybe you typed it yourself and there was a little mistake ?</li>
+</ul>
+<h4>It's not the end of everything though : you may be interested in the following pages on our site:</h4>
+<p><ul><li><a href="/general/auction-representation">general/auction-representation</a></li><li><a href="/124-lot-543-bank-leu-auction-catalogue-">124-lot-543-bank-leu-auction-catalogue-</a></li><li><a href="/124-lot-538-bank-leu-auction-catalogue-">124-lot-538-bank-leu-auction-catalogue-</a></li><li><a href="/auction-representation">auction-representation</a></li><li><a href="/testauction/2019-02-08">testauction/2019-02-08</a></li></ul></p>
+<p> </p>
+        
+        <div class="footer-hold">
+            <!--                                              -->
+
+            <div class="footer">
+                <div class="footer-inner cf">
+
+                        <div class="footer-left">
+                            <div class="footer-logo">
+                                <img src="../images/logo-footer.jpg" alt="Roma Numismatics" title="Roma Numismatics">
+                            </div>
+                                                        
+                            <!--                                 <p class="not-palm">Telephone: <a href="callto:(+44)02071216518" title="Telephone" >(+44) 020 7121 6518</a></p>
+                                                                                        <p class="not-palm not-palm-email">Email: <a href="mailto:info@romanumismatics.com" title="Email">info@romanumismatics.com</a></p>
+                            
+                                                            <a class="palm" href="tel:(+44)02071216518" title="Telephone">
+                                    <img src="https://www.romanumismatics.com/images/palm-phone-icon.png" title="Telephone" />
+                                </a>
+                                                                                        <a class="palm" href="mailto:info@romanumismatics.com" title="Email">
+                                    <img src="https://www.romanumismatics.com/images/palm-email-icon.png" title="Email" />
+                                </a>
+                             -->
+
+                                                            		<div class="moduletable">
+						
+<ul class="menu">
+<li class="item-401"><a href="/upcoming-auctions">Auctions</a></li><li class="item-402"><a href="/index.php?option=com_timed_auction&amp;task=getBuyNowSale">Shop</a></li><li class="item-403"><a href="/contact/">Contact Us</a></li><li class="item-404"><a href="/">Sitemap</a></li><li class="item-258"><a href="/terms-and-conditions" title="Terms and conditions">Terms &amp; Conditions</a></li><li class="item-259"><a href="/privacy-policy" title="privacy policy">Privacy Policy</a></li></ul>
+		</div>
+	
+                                                    </div>
+                    
+                                        <div class="footer-right">
+                        <div class="footer-right-top">
+                            <a href="http://www.bnta.net/" title="British Numismatic Trade Association">
+                                <img src="bnta.svg" alt="BNTA" title="BNTA">
+                            </a>
+                        </div>
+
+                        <div class="footer-right-bottom">
+                            <a href="https://en-gb.facebook.com/RomaNumismaticsLimited/" title="Roma Numismatics Limited on Facebook">
+                                <img src="../images/facebook-icon.jpg" alt="Find us on Facebook">
+                                <p class="facebook">Find us on</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <input type="hidden" id="base_url" value="https://www.romanumismatics.com/">
+
+    </div></body>
+</html>
