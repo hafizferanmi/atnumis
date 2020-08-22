@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'leu';
+    font-display: fallback;
+    src: url('../fonts/leu.eot');
+    src: url('../fonts/leu.eot') format('embedded-opentype'), url('../fonts/leu.ttf') format('truetype'), url('../fonts/leu.woff') format('woff'), url('../fonts/leu.svg') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+body{
+	font-family: 'leu';
+}
+
+.glyphicon-leu {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: leu, Georgia, serif;
+    font-display: auto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none !important
+}
+
+.glyphicon-btn_download_filled .path1:before {
+    content: "";
+    color: #1c3352
+}
+
+.glyphicon-btn_download_filled .path2:before {
+    content: "";
+    margin-left: -1em;
+    color: #fff
+}
+
+.glyphicon-btn_add_picture .path1:before {
+    content: "";
+    color: #e8ecf2
+}
+
+.glyphicon-btn_add_picture .path2:before {
+    content: "";
+    margin-left: -1em;
+    color: #c6cdd8
+}
+
+.glyphicon-btn_add_picture .path3:before {
+    content: "";
+    margin-left: -1em;
+    color: #2a3752
+}
+
+.glyphicon-icon_phone:before {
+    content: ""
+}
+
+.glyphicon-icon_mail:before {
+    content: ""
+}
+
+.glyphicon-icon_fax:before {
+    content: ""
+}
+
+.glyphicon-status_not_ok .path1:before {
+    content: "";
+    color: #a71c35
+}
+
+.glyphicon-status_not_ok .path2:before {
+    content: "";
+    margin-left: -1em;
+    color: #fff
+}
+
+.glyphicon-status_ok .path1:before {
+    content: "";
+    color: #58986d
+}
+
+.glyphicon-status_ok .path2:before {
+    content: "";
+    margin-left: -1em;
+    color: #fff
+}
+
+.glyphicon-arrow_next:before {
+    content: ""
+}
+
+.glyphicon-arrow_back:before {
+    content: ""
+}

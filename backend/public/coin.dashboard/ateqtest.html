@@ -1,0 +1,2808 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title id="tTitle">Leu Numismatik</title>
+
+    <!-- Bootstrap -->
+    <link href="/vendors/bootstrap/dist/css/bootstrap.min.css?v=636863730007209819" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- NProgress -->
+    <link href="/vendors/nprogress/nprogress.css" rel="stylesheet" />
+    <!-- iCheck -->
+    <link href="/vendors/iCheck/skins/flat/green.css" rel="stylesheet" />
+    <!-- Chosen -->
+    <link href="/vendors/chosen/chosen.css" rel="stylesheet" />
+    <!-- bootstrap-datepicker -->
+    <link href="/vendors/bootstrap-datepicker/css/bootstrap-datepicker3.css" rel="stylesheet" />
+    <link href="/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <!-- Ion.RangeSlider -->
+    <link href="/vendors/normalize-css/normalize.css" rel="stylesheet" />
+    <link href="/vendors/ion.rangeSlider/css/ion.rangeSlider.css" rel="stylesheet" />
+    <link href="/vendors/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet" />
+    <!-- PNotify -->
+    <link href="/vendors/pnotify/dist/pnotify.css" rel="stylesheet" />
+    <link href="/vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet" />
+    <link href="/vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet" />
+    <!-- Fancybox -->
+    <link href="/vendors/fancyBox/dist/jquery.fancybox.css" rel="stylesheet" />
+    <!-- Datatables -->
+    <link href="/vendors/datatables.net-bs/css/dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom Theme Style -->
+    <link href="/backoffice/css/custom.min.css" rel="stylesheet" />
+
+    <!-- jQuery -->
+    <script src="/vendors/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="/vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="/vendors/iCheck/icheck.min.js"></script>
+    <!-- bootstrap-calendar -->
+    <script src="/vendors/moment/min/moment.min.js"></script>
+    <script src="/vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="/vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Chosen -->
+    <script src="/vendors/chosen/chosen.jquery.min.js"></script>
+    <!-- Parsley -->
+    <script src="/vendors/parsleyjs/dist/parsley.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- autosize -->
+    <script src="/vendors/autosize/dist/autosize.min.js"></script>
+    <!-- Ion.RangeSlider -->
+    <script src="/vendors/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+    <!-- PNotify -->
+    <script src="/vendors/pnotify/dist/pnotify.js"></script>
+    <script src="/vendors/pnotify/dist/pnotify.buttons.js"></script>
+    <script src="/vendors/pnotify/dist/pnotify.nonblock.js"></script>
+    <!-- FancyBox -->
+    <script src="/vendors/fancyBox/dist/jquery.fancybox.min.js"></script>
+    <!-- Datatables -->
+    <script src="/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="/vendors/datatables.net-scroller/js/datatables.scroller.min.js"></script>
+    <script src="/vendors/jszip/dist/jszip.min.js"></script>
+    <script src="/vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="/vendors/pdfmake/build/vfs_fonts.js"></script>
+    <!-- Sortable -->
+    <script src="/vendors/sortable/sortable.min.js"></script>
+    <!-- Bootbox -->
+    <script src="/vendors/bootbox/bootbox.min.js"></script>
+    <!-- Chart.js -->
+    <script src="/vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- Pusher -->
+    <script src="/vendors/pusher-js/dist/web/pusher.min.js"></script>
+
+    <script src="/source/js/correctingInterval.min.js"></script>
+
+
+</head>
+<body class="nav-md">
+    <noscript>
+        <div style="position: fixed; top: 0px; left: 0px; z-index: 3000; height: 100%; width: 100%; background-color: #FFFFFF">
+            <p style="margin-left: 10px">
+                This site requires JavaScript.
+                <br />
+                Please enable JavaScript.
+                <br />
+                <br />
+                <a href="http://www.enable-javascript.com/">http://www.enable-javascript.com/</a>
+            </p>
+        </div>
+    </noscript>
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar" style="border: 0; padding: 15px">
+                        <a href="default.aspx">
+                            <img src="/source/images/logo.png" class="img-responsive hidden-xs" id="imgLogo" style="width: 90%" />
+                            <img src="/source/images/logo-without-text.png" class="img-responsive hidden" id="imgLogoSmall" style="width: 90%" />
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="images/user.png" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome,</span>
+                            <h2>
+                                Edris Mohamad</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+                    <br />
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            
+                            <ul id="uExternalVataloguer" class="nav side-menu">
+                                <li><a href="default.aspx?page=ucHomeExternal"><i class="fa fa-home"></i>Home <span class="fa"></span></a>
+                                </li>
+                                <li><a><i class="fa fa-paw"></i>Inventory <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="default.aspx?page=ucInventory">Cataloguing</a></li>
+                                    </ul>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- /sidebar menu -->
+
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small">
+                        <a>
+                            <span class="glyphicon" aria-hidden="true"></span>
+                        </a>
+                        <a>
+                            <span class="glyphicon" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Settings" href="Default.aspx?page=ucUserSettings">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="Login.aspx">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+
+                    </div>
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/user.png" alt="">Edris Mohamad
+
+                                    <span class="fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="Default.aspx?page=ucUserSettings"><i class="glyphicon glyphicon-cog pull-right"></i>Settings</a></li>
+                                    <li><a href="Login.aspx"><i class="fa fa-sign-out pull-right"></i>Log Out</a></li>
+                                </ul>
+                            </li>
+                            <!-- Notification center -->
+                            <li role="presentation" class="dropdown hide">
+                                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="badge bg-green">1</span>
+                                </a>
+                                <ul id="mNotifications" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                    <li>
+                                        <a>
+                                            <span class="image">
+                                                <img src="images/user.png" alt="Profile Image" /></span>
+                                            <span>
+                                                <span>System</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">Message for settings...
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <div class="text-center">
+                                            <a>
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- /Notification center -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <form method="post" action="./default.aspx?page=ucInventory&amp;id=19479" id="theForm" class="form-horizontal form-label-left" data-parsley-validate="">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['theForm'];
+if (!theForm) {
+    theForm = document.theForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZL-7TkYVYfutNEsSJQAeisfJtxSLUW5GreGjKoBJiYkdZ7W99EjvlAGpre1cWPoAZg2&amp;t=636776761224055265" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvgPHXnLns0C4YcFiqZ8Id1DyGsy711N8JNt_7dUXWB4PP1jZN7iJAQAMi4WsHkyrebOdU1Q5T8KtV87n9Dw-XdH1LsASeI1KmUzB6o-TzIhELRpouC3w4CKvi48QxcoRwACFQvOHfxqE-UtLOBIKseg1&amp;t=ffffffff999c3159" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OAEi0-ceNFNVHMQFPkmS5P415wvV36cZd6IrCrEDOqjPwxaYJFJb3q7nMcSUZ5y5nLREaIsjM5gOHvomxYjANEKBPrEzAqm2ksa__PmHiBFAyLQKDuC-dPM3BoDKxqk3BQEXBl-BOUdc7wHhHEWk-N01&amp;t=ffffffff999c3159" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BD33E2BF" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="tAQyXROHMNzwUXrJO4Y18l7CXDHE2hqBXtnBcuSp058rx8D2TwdW2tqaVTruOlYwdOMc/0iLf1Q+Glyay03ehzrmLFCPCAPQ4bgMAI16mgNw3tZuVhSNGr6iLpqhZuRplzw53Or/Xao/lw2Qpme0Ke0UjUw7kluYCS2PJxMXdg6LNW7xlo4J7ZhRNWP7V5qgqzjXCA3uSCtkmiGYij7cMd8UW3MzI4Ty2sc+z+JIQ733yfxl43C43/z98VclTcB3LwGbgm/UDhAyl6U9KgivWn6irmbkRLBj+OrxG+Gc/eEH3b9zL2OyMWgaqa0+kKI+5CZOM5UedkyFbwehiYmPBmVGbaFiVogzKHqL29Hk8mG5QxjJVCTitcTkfq0usWprsy2ryTxH4v+HncavTh1x332u6JFspmYHzL4MFDnXy/c9IhX9H1U2Cq9yRrQjgRN95qV744yRUJipzN20g4jRnncS/XzndauUnsGvJvLuu11vYdWMlEjdnNtp7hzLgLRTpjRMhGIb/rKgv0ZUNj/dYbr5m7FtYm599iCmt0jMFd0TnBeZpN7fTeYWxe1HBPJ28Q4gH8DVl6mK0y8T8aufihhxNQiDrIYmWtpGP2z4MMvMDz54zxbCRN+zMmdZDU4Xp6/8Ygr63DdCWcvMG75ebKxMDVKFAtzmeusePROf0yvbScZNfBAH3jZBbjJ7cF0XHgYGmL9AyilH6ifPNwY5//vB3jAgfCsHpi+yaOj33xrOiVHOmt2vR29ZMFXOermyUfrWRLspnjA4XR+1i+EXfHFO2dbotUZhTgqVQ+MxXao25X5wXYf2IYGbZy6pAzPjQXotyrqchgbBek9VspCJJpIZyw1QhXz4yfUXSVniWBmyC/PxbbmVO7IvdYpOGs3RiVhEYc5NkD4IyP2J7B8dIemPXvltLzl5Lb1l83Kx83wLgpZObJ7dKvNZ0lUKZwR6Givvdmz2VRuyp2+yP+NtRBN7Qj6Qw2feKYcsvXNi/+DoW9Q1bAf9loFtxleXfnlGHniyrRH2csCncp7xt1RWFDjdfog5Z+1QHyDsCWjaVV2FY2Gz5m43iErnlHajYtzZ9S5wI7jFQgas/KQNS8vrpZ6a481NHKL0MNkMtHIz1v06hmDv6k7PRXIgDDTBgLtJGDNlDErYx9k6MFW8AtrwadmNBw6rJ7yGXAcfOLJEpH6E23B7mlv7ztG4Gpb7ULNLJfDEFAj+nYMvc8cP9vhdmHAgSyJqdWeH8p8Mui4iM6gtWOBCEXHXqAE7Pd0vWO5o6CFypaE9V41qHniMKpb7PmqwhRyBuD2e+3J9JxiFW85Gy8QRf0CJpb6EATa9csBVXBj/UN9F2QnWDcLZDuKS28jAAE5W7uFpNhQ5FsauShvX8qUxdtx2gMhCJU3NvSQk188EQZkNsesXNXioxArVQjJWHdbXgj0JwKBe6ZXPdQqyHBqYRYSQXP+EkehtMiqG4jfYDHnZc7vbcmGYi2RuF7E9jFPKGxXf/AsXclFEo/aB4E7RnA6oCGc5RYI8neCHXT2ih2MiODGWDEIVFg6swxadeCNR3BZEmKlWNDfCytttPQAZNvPAaYQOIfdexsFmiO2FKJNriFMp7T+gcKLA1ptjJ8Dl3N3Dd/RBeOTKyAePiu9784xhhiEX6zG54w+qjElTHUPLYhDURBVTuJR8wmR4R9arzTonGg09yCD7yVtovZi/CyB4O6iwUNPdV0Q1s0OaWPNwHDsRTAF8t/sGZa5eq+Hg4v7Nvnd2tYb886S4y/Twr0Pofoxv0w82ueixKe68rhyPt1y9Oju/APKj95qKppUj4jpiniUvYEQgziM92eGMwgvsLZaekemDfcqLAPfj/1mvumzf8LR5203RREcdcvaVtJOq4TRBpFEm7xrOU7TkmA+wa1BJFKQUpmHjOWgVJqPqK8kxO1dWA1HpFlk7qlfhof4fNWAY8fgzwbJnlgl9QuZRDcJLpgtY06wSDR09+jTDgilPQ+XrkvgN+EAHE/SiizKdiJ0rLlYYwmeqjUghv3cHbgxvX3JJedBfZ8lUWYt53DO/ykbKBLAn451aYPfNO+Sc+jErPIwU5LqvkliZVaqyvFwjgGJUZTfRWVtE+ob3N2xvl33CkrqT2EnmrHoiS9zhuA+cB4SWzh+2cDj88fxwtGJuTRTHWEE5VAqdoPPqYAcXVUEvsLm+y/YwBE7I0Msb9FhxRB5WJdNNK3UeyqLuU1MKDJMTRJnEg3ElSApHzmn9m+EnSYEn7AHWG5ATHduIQnEO7P21HiCGXekvi8jQdh4VX20+LFlrMDE9k3LvDsPjhV1nxE8M/7Uf3ciak00DM86Al4xwPD2hxnmLqfz0VAEqs9WyRtE0fLlnr74V3AUkBq4ybBjUzMWmzQfJ/01cHYnRO2K0xMM8xdj6N+rZE0mk7QCvuPl3A86d3IuISlCu9jn+0Sx5/UVfVT5x/JS4felO9O+3lDev86Ozw+I4r9F35pLZoRaQ9MPjrdxhXAykFELviSUHPz2vZ3lipauFN7L6YgHc2LfhK97obKxHNorcS2KCKhy7SkOkpljadTC6WkgezjRpq7zR7IZYftN+eZyn2xtJTfevSonBo7AUXS5mQZV4UOl2xcJgMS4goFcTejDwvjBbVxPITaarv06i/XKG9fWxb8sbh7YngA4l3ZVgGoDMs9p8U8ONQ9BO3WbkZuVuRgTbULbyU5ck07udMlEusrSp9RA4A9yyY7IOY6Wf+rWnNcS61nfPsJtHPIjmkyuVPV75gIq0R+JSoGrQQKI4BuG5pmQxVs2tf3rt04dr+/eovjC5LhkwE/OoDLcbiWcwJasu2qka1wmZf8Kf8ML3O6sand2UFNhg+OsL5E1LBYgD86p1JLT1Hfsv2JOE9z71+BVdVLYfG6pxsyNY7udY4x0yuc5cx+3GllWIrVk6LQwqc9RfkvLrgdIzIDpUCen3RjRf+GucmnxAn8VrWZAXDjEUB2bZrW+sztwL4SLLkTlE2Z3Ea3mW/st9U0zS3EvcnRzRvSuYF3Vip8s2czfLZpqc6DSH4ecKD0Tjrje9pyLG1aH+1INUvpdwvAgCPou5K36WsuciJ6SF0MdTMGVnHTeROrx641T7CxcO8NcNKmAc99/24ookqUV2MU5V0g0tu4zsFHZRCsvbrA1nezIbyGWQcQarh7Teolz0uLsIZrZjKOB1RRndJB2DUP2/s9XaMg9p+GSku9mX10eXiC73o3NUGyEoYfXziqkH32rk6yYE62Nvg951Usy3DKXB/LJ7vclxyIAtPSPQMhtwZrWXE6C8TglljpmcTQLhb+kb2IgGRf8meGuLyfDQLzup7D1BaProospkklRoVGpFExZfL1EbPOyX0NL6GXN09dvX51xt2gH7yz3fF/ymYrIQ+tZAbtP2/lIBMWaTp8nHvpZdz838/hFU6X/pw09f1zDR+TZDe5rZ83dgnSsarvkQmfCaVw25PGKW/sNy/8oelYvqf8LF9msqisGDVxq0ys6q2UMHgO9c3DGNmQxLd6vzpFCaWtnSc8TOZspeCfZP2m3ttYj2W64umir5hoHmVMJxPFEDPNa1+Np/t2gnMdt+y+APk1KF8AQqLkrj5t36GgR9D8Mnlc1qXbycmPSGig3jjZdM0ToKuIVRoSpYp/cunPo/ZnrLkrd570vli1bL4Ko1U85coBrwDcmxMk3PGx2rkJQd//g/micSKt3O6gXJzMm766FyZgZCHEmehaqBku5WCChz0aaNpKrG0HG4WGExPyldljDto9JvoyyN0p0W7JipPxPc4wGZr9aJmsR44rfGBpSehTVclxIFgUbPWE61c/eoj3VwVqY1dIn9Hc5694Z3Ssei9lNmZ9fpulpWZnqgtghcz8ZvO0GFHioxnElGv4jsbhePgqix49gr6tqsB186LyS4J2eKLBmNQGqjEtYRnqkNf5qJztBBC2GfvR7Gz5p85jbLAjK3LDKDl/it6tYAJ5V94rItamhD8+9Hw1pvubR1oR9k4p+oDpOADqX7pLuQcdbGbxrhu1hLUBdbLBqsftt4Jpf6hvmKXgsvvbBWC41cwWF0qzN+R5v3iIuZ72KXA0LxPtH14F1fO7ZVugFDMfTc3bMdgm0BtYxx1f09314zhaDk14O318JGYjiYczcl+4MqRVTS+11L0bQOmPqkJstGz5sMKctGA11s4QyV+667NBLa4XDbFrufHBq+BYRi1mB87y2nYI/CptHFIgSoAvyKn8r2w2JmTw8tKD2JTDsHHcDEJFdsGraqaFwX/TEsPw1lzOnR0U1VcWbxlfAvdp/G8URmbWm83VD6OtHWxtLYPpFThMqPbqb3f1wn9hjdAjaJYp+DNF6GB0SIRhZdmKjWrDGhk0GzroKUGyBnnWNz1y7caFZNerWkzUaU1qIr5qCKe+qUqyPLrdatvLjFXasbhVqu0+zhmAZYHBvWI4bdkWQGL27z/hiG5pd7nuKdE7tUYZzImdrY7eDI1wz0JeLlxJGIHx6CaPJquh9e7NeTnh0xlgu07WwoCuEgrzsDdJnTFe/rXajMuV2K4xFMnZIUlJQNNRSwttAcFkZ1wpF1MJsbtmbyIRuklKsQ4tKICsgxuX6PCUOzRFEtgF4lKOdBvo73qb3QwP6UwEDJtnmnnD4tF97Baz/iIWWUO8GzgT22Cz25cVHi16jshZPe9JngsDaMw3GHBkx/1tP+zVBzH5g3eHLgZ5kA8/99DEIbVoa75o1GfWOvN4xPhTXHWIp7G22pbK9DG72+sKYemLE2uOaTuJ2xPcdJu9HbJE/3bZen2x511XOXZniy+F5dIL0kEk7e6ky7HfV9gJuEr3bNhjohnJuTkQlA+uOP+uqsZJVVnou533g2/diQtGrPlAW47TJLHLFQgsnXgand0bLIqOnaA2ZT9LBCpzQcIPgRlL2cJMbdDEoxEMdI2LMHqNU6pvrgEUdKFYi70ouLOIg4km0uH08PTCmqMX2GLrlAiS1EEh0mPQG8b/ZyWKqwgGKggMLpNnmEy4zkYPOYTHIoXlzZvz/aagNZ4TAVvvbWxkE+9yfvdVAJNrDQxkPnTFlYkq4QOIaWFMaFQpMDHoNVFrx3O21yeEJjtwFE4EClfchT+VXD1WRGkUJ7z03CuAlEu6UeA34kgBdw+dicgO89cUdCj7wkCgcVX1JHFOKZOZ+3FNxuslquz1oRSieXyFQrUozIMTooV5EbEGT9aUv/RUs7ZtNwFo3RUhrSoGtDZ0rWrysLskTxG9naquTd5LVe8mRp3t3t6LI6KClM7Pb+hPBvRAA9td0Ac80yumUZ2ZFSGgM8MuDzh3ytFZWTR5y/h4bGRm1xY+bCuFczYroLz0ciQl9SBtbpSp0FGMjjPwqShEUgzYgVLIXvO9hyARPDpsBeDfNmwPgMDRbYES/zQAWzX2DE1o7WYtEXBjVUCtY1LUqKjOXYOXRKzpSRtVVi7YQTcP/j/RQk1l+veNuioVKdm3ngbyg6uZt0nWbEg31A91LF47ogFKlvKfBwHgldSk7aoIgTRAHjYJObEmUuy5y0iYMeRXN/igN2hWF4dQS0FzpN+qFAES9Z+6IsadC9t+D25aUnOhjno5dRjuUfX8YiMYiy5fU0ckaTrgWNi72yFChKph8ixQr062e85ZaWhQ8alX3cCl0Ij7xfC2xGY2DVNd+/a30ly0y8OymdiZ7yoRmXY6x4G+2EnrNtdmq9OexN2aoys3WRpg451QGBIL7xksBV2VDp+nQTYUprFjVOS9SnttVoHqmcjnO/ZxR/2FEhPz9Y9bqU1Ur3xDv81rLjvlXol9rrgXn+6WJ/OMuMUA/jlZMHOkznE18jKj47Kl9W7++qPNVqh0nJ8s1Dv5x4y5vi4QDIhbcY0oeLrQZF4hwjPXOdm18iRRRc7jkeVg6riQYisWjwezY/XRmIrSDG5+c7CV4KvI3JRZclqcDX6VS7VH0Q3ygRIKMeT21BQ4sHL4lu7GAbEXMYtcz1/173nUi64YkTTBQ67cwxDcPJsTdJROxO403MQFvlk16pmKuc7I4bERHzxBKIRzUxdA693mqfjL0GS1qM9J6K1xI0cSYvZNWVdh9ZTGLWlTn/ualTgklVh45vX/wfKEB2+f9L6MvzApQ3pvwl89wLlTQLu3dKmYJmXDS68J8UNK/2bc+Y766yMp+MilKiBy5//wTfX4ZYBMQUzER9CMveYxOOIxMTS4TG7ZxRPxhxGoGW/W4jyNBAuDnUzRtKPA8P1qff7k3rkzpuuLKiYioLoTPVRufm8QFZGF8lpWH+F73fhFF/XkswmwRM8wPa5wsnOKwTYnS5fz+Y3uTlnQnQnzmBzw9PPso8y2/uNbg8I43F6TlqRJGbDkFS5Gzr4zi3B/SmcyWwbWNvcHyz80JckVvRSKIwtLZZn4QIRMmLN2ZQQcELf2jgJGe0FZfesz17K32j18KxNmDOt9yYl8OPz5IKjiMk71ZdDPNY2aN8PkuDULBt744aRvI2J123CdQBzO6FfzlXAYGLJdi6Fu2fxq/OHrD33tWitROx5Ctlk/MOkDizgC8ZPKf6INcc6O8aipuxFmxhqBYBfVbCIpWGWpLbzqcYRJT8aoRbx+ewZtM4IWfozElosyrDlSLdBbUtHHa+FrKWdD+UjfV0yDY0+On5V5YgP4sRYdgp1OzNnPqAQVbK3l5ahbwZPQ263d0vuSNP71DlYcR8kJgJ4YtcBG/s/JZKRi6vWq9uYkZOxkHvw48rhGlw4jknJuUWLO3NQJ9lUr/i656y5DuWSC5k0xlNOcSNdyT0a3JMiCa5g5ruH9CsfnBK0tpfH4O29X+Pm/x8s4k2kTI/ZqJkJEeeza/JoiRsFWG6nzB4nEfHVmOFY41oAxWMElhZZJko8jOCMhHM1zxFVoAyqquVOqOKopLeV/6bRzraC9XPP+seejz9PdGX3ezSv4Q1/K5FRjWMM/1iWpLDRjI5pohqQHFADOL6tGs8aeb6c3yC1npRl99YQPtpvmj9s99POiOmM/pf2vMN+eymjuxpTBFRb/G2FKwEnlfGX/P5K/jIDV/tXz8KZ4BRQ4SxiCK+qQTLPgvkVDvYbMLzRJP3heWDhEAFwTDfPbNkK71Mn7N2FL2+bzMR0gxOchWLamfscxWOubs3Z97BqiOL1cq1CC6WkO4RAp/9LjYbdbm9xyd75E9MR4q7jzxcqvfei1WrCvCWNkHLqThwNzVCq4Taj7XuennNIyyiRA8QZq3hazWqdbpSX7IfdRdHk+zgGzOU7WLV2NS7CMztr24JhloRH/+mDf04Ji0JWqZmO+ziEFiI1yJy3CzxNqHlziaP4nysFmdMh8ej5K6BZZQELb7u05SRcY7VqTs4wgUZ9rCNrVHMdtz4ts+Xl30+6sjXb04jrwSutEq1ido3cGxXuFhpyntMyxVguHxDSRsaTEQjWZLq30jFUbTeC0RGHD6FKZd3VN47zKYRYGJbOKSTRaXKwyTv4XYdSJm1z0HwizVbiWxUod1R1Dubmc9ycBCpZLF9z6ZTbaB84Q8BzqyuBRTxtxgsRd/hPb1mfFdn60wYZdn8JAWxw8sTgSfP1+FfOZQChnnHL/IBh7BhmCpDE1nFLw5QpbP+q17rGMJ12f1vWHuDGYAGs5rfXa2ex5wigNecTsLUPc1bmB3lQHWsHFRNA0sJyGxR0ulgiANjkiW5PMqF8YnhwLsCX/ImOoH5q+h5+Jnanx7gM69S3XkEceNZh73ElDqNv+xJwkpmQNGGgHLOmU369UtO/SVKcDKLr5MIHhkw/DEys+VL4lG8Bw6lb3k74m5HRxQX+AI5T07fslKupo+dPJA4hAe3k90mf5LaxI/VCGG2RAL9VdwmpH8V0xZXPmd0by6L+7gXpd+4FT3GjSL6S66jjeewUao+PrJkqVN9BGJ5VgpgweOk6kXFV2NmyK6yU38bdWiYqSXwMzP/I561qrNGujYKaH6A97L93BpIIfdF6h57+kHPBX9slGznVMIaNMIHH9Dj7xgsXQltOKJHVoc4BBZfRqIc2OScl//VgRHHGLBaAMLMv4dEe+toG7xbjVtnXvXE7Y0MEIi2MrBOMI3FWHIVN9SQXg+mkJW0EOeOC2AJaq6kJHi3aS/d94hKGPVinS26YrVzt4MLGwnp04OnVq6EOkjEJo8FIMqOrnpZEGShlUXAJItqKKXE6q6aX/H7sqm8KQUCKiJ03iGlziEo8N84tQkRmEzoJTKmQOpcBSDi2DPJzrwu5HSpZQMpC7CyAIlHahgRRU5tLd2kBZ58YC9oAjkUIYZhiyA6pNcY+Mo+SNcA3Gbuhv4XvJ1u/N13s3+oVnsHO6EjGeW/YtFzRFuJAcKjB6C63MeheE/5rWJsCjbP38LCbnWg0xnVVMRwHzb+vo1NkU+AiTabF06oN4qNGWWS7D2u5J20sFOVU7hLwksBevqxqWMD78J1o+T6uytu5Vr9DKcZfKEC9+hKxEHmuC27OUK66nh9FbZiloTHaRkcjiVJTWOwXAB4R29XOj2cSu4EnzjI+AL05XKpCwgtTtyGFjrkJ6CW0DjfScEkJild+Pw6UJd0nOGUaFyxgeafo9vh2EiO3Z4kovcRvlBCZ54jgOYHBc5Gwu6xHsnB44QuZaaL/yFwQINp4DWfPw+Ka0Apmp5y5D2wPaPSViWASvtCnmZ2HrP1SjCv0k1bFfcC/e4FDpDfbMH6ERzr0hwD6J5wq1390uifo543vvpaQlZ8t0o+OhEXhk/RMUokEeBGZrfYC7WmhvPRmylrrKph8TRkg3Ca4ej+2tFsmu8YqFl9DR++ZdtRvJxDaQpNYtSt3F7+U2PYVYBKBeNX07T2nh/9PaYgeqNPyJb8CDuIEvn3wVdt9X89ZJ9udu9pEHiX3IpReN4YGvpcnkHIb1EWzfIqn0TmCYf+OraldIzx6TECZgwtFnOI6IL9XmbfROYaQ0Efr9CjBSZBaeP9CV0PuI9avV1eGD6EXcX7tg43pEXI/3iHVf/HAcoWDz1MVjHXMqOoWWMqMFjzwr0izlXIF1q6s6oE7wiT0ud+IzrP/3b4epCUln6YZHINLLaERCC2AoNckdhkldWsF2tvJFtePRoqBXZ2G7VkITM6ldIJxO52U/RLxDRlb2XmZxy8a+Yxyc/aPMfXp2mFzCSo4DJSUkxscvdtaQwn6hkCLv4bvA6JWh9UWkKpmbXZXax0Et2ByoM5L/4D475+HJdXmGK5Lw6Uu6KiQhMZPWGavB4LuxkJzluzbSrQlq2NHS869Ltbz2vTHgpSu3IDFRHj05eWfWPQfmCe+c8elh0yv+lccGhnU2XWIxivir953MU1cMnzce8CI+pvczzArJGU4WkGPL2YxrZQqLVyMjIZdivQJUuXf9cnImI3KOChyAdFtYSGiv5Zx+KjpCjHO7sdbu92OqjvdFdfhTOzouQBNb3/haMJta0hR/6IPnTnlqgpL/ZAjh0c4YQvvkkawbcqz9AbrKcnfIU+1lzhM8bFhYYo3RSZUf0H6vC96a0AYP1aDTEDCgdhBTQalv4DH9eFCwQI6Tqg6ngSbskV/axFQmKAAzKumgmwHmiRJL6vEiCGlnLrzBIao61T74WNK8GQpC+XVUdly9VTljQfjhHt3UYB7NPemtQYfYOoOZCYEW4znteF00qehidH12ioroNb74WU3RLpZbC2Xv/rdEWHuvphFcFUkWSHjNWEGhf8xqdF1pewr8jhclDhztRYe7Qv8Y0KmcrGRe2eMHfjTQWqqPzhvtsTCvqrHCWE8lBNpLFGb9+vnYexEW+3URwcwwRregr8vpmQNkRf7NSbuNtd9W65HodKOQkUyBuOgtvlQYE4LNiEjX0jq4oMNlj/2jqtkNFzqJD8g1GB8JjiLeetf/g5R5P7GDAHtYeF9xNILSs1ZVJ4c8NNhH+wGQl0+MdVKJs5lcArdtwrSBt25mbGWQCGbr41ULTzF3pZOUIv4wRDS5iMF71Iry9vYOMRRPJvkN8fa8W7G2cMMRsP9igB9BRUjlIDhrj8g9BDUQlmJhfKe+8k806h9TSyBHWaNTaqVqb0/656IzSWlZn4xHjW5x2Lxn7nMxZE9aVUZ6zNSFOmrf8smkHuj9PhcFtZBnBHzTZvwTW693pBJrSODesCo+i6O7D6PZGSUgP+jYH450PgTLeBZ1Ih3D46XbYCj2jKonKhGbd5rQ2Aq/zwQh0niKf1+ou2i2pjbNdK6qICsTQwYXSy/DkZ+12Zc6MEraJQ3nljQjI8CskJ8l+X7AvCR5clLSFRmy+vDbyv+4/wSwm0bxy7ouy4vjveogUrVM5NH50X3EX5Ce3dPH+XPh7XVGKDIzHx0XzMwS9r4J/2glIaa7cGems86E5fV1hMOTjjbgk7muO8011Wxq3KCifpCI3WBBgyos9eDrlkJwltffJVFWXWOHukWoczqGv93EPl8OLFu0k3ZuhCgphTzKvj+xjfEe66WhuXgmCYakX0TEkXYpQVmzKzgcrK6tnOZl5WST/DPqANQPFP4MVohjRxhQCfXsH+x92Hdxp6knuRKfWYdv/c7tcOPe9PxkYY3Od+ohiOw44nQutY/PWGbIyzbsZ5Fsz8DriVKRlEoUtzxA2dknTSeulxNWBElpL16qMuGQX6TEr+6fepyupdcniSTpsp016ZChPEl7UspYzBQv1gm+HM0DZgkJlCVqH6/Cfm6sRVrhc9HcqtJbNVWY0xn9XwAN2RCFLMQquNjP36qsQwsVEjO4Alod2IJsmh7wFbEx4f2KQ2Yu0HkYiIF/s76H4Lf8fbwMW6bRdd1rEHl2JOmWQp8d544H0OrGl0MT8GJzJxQCKYNYEo8k20wHxofvGnD0AysUxO8TcukxaJ7N2z2m5GCLl9/EbSbw+qcQ4sv5sXz+CM/cl0fgatl0RmOH/aubOlEgkCOlrCW/YWaO3MI+P388OhFAX+kvJYfr8Zwv74+y2Y4K6bdi9+rPVNf8jPebTHEXr3JZbN8WY5KERdk5myZUVRJ9MePAPLH01Ic6ZFjaitiTThKCOPwFjyiSWkPYc0qaXPhReQWOX9WdWidDhQzboEAmxFetKjH9kzJA/DxQvmXtdbK9ui8ejgXAAC+ncHYs/aNskIuWrOJ8oMnCWE5ESGpVxZsGR7tvN2bcFMvR2WKA8Bcrx4ajoNTfj3hk0gP0/3msIy5DSO3JWyr2XjrON79pirSEWB24rbVx4u1bDdzI0jPBMV9SeRSg7IlqTZGGccemlM/Yn1GZF3EAtN6EcYhC0v4tU/Up75dxGyDtZvPFGy0yVVjnG+h3rvwp9V2lLRMtZ/N7OvH7R5lGv/sd1j9GVBfeRKo/FfKo7zl4KfX9b2T1rr3jfbuuDFjUEzj4l4mjn9ht2+Rrxc0KNMS7MGXMXAaX0FkkhM6fd4gWxR8PEkGu/hwgvqw1AmGQ14OGTh7lm3alPRgkeTHe/iOQ0bjiAkCyb4oV4+kAQah6z7LFmZeNomQ3h2fU7A1az+tnsTywdpzvqIBuOqKdrjegxOaL+je5gkbroH/942O5vMiOXS5wOQ0emehXaFVHvAEkJCmCxBOOwAiGT3GLb1C7jLlxTiDBZopEHF+QbewAhWKn1wVMU9j7Ly07f+4wCAdwOjbnwdhPmf/eLUSe5nBw661VbgDgz/WiPjXfKYBUK7xYlIeFq1JBERs+R+jCXDIizHuD/lrwkeGdLwbqiM5P/mILjEkULiItYaYIQE6rK7z2o+GJPnIIfpghSbLygRfWsiBhK7cVq/VD6BgDCtNxel9+gE4B8YPiuY+uZO4YM+rgRlwsQmduoogDHPPZ8UMoKxlG44Y+pKQ6wRxaiQMizZs/Qoxbm9YcMvH5OU13KG7bEJWRmUbOc+POJmrY+6LoqYc2Jdnam4GgTVDgig0W6rlwpzyF2De8GJs2Cng3rQoMuYbZSJySboLXpBJVa8tNKNMAAkRZqYsCd/KMrSW6isfZQ2TIBdwfLKMd2dbsEtSx5soLOK55BqbjRlOufwPN+KPDERnOtf9KQ++jaXVxYBnfbF3jr5D0TPvK+LbgvoxTRByECtv1FzWtj52Ah497RwSnJXwXIM0NQo0rpceznrcRw5b1C3cMXqJVHDKd/iqTnTEtiohK4E7MeAz1JiPan62PcBXG+ttJvQ8WWRMMQdNrwFLGpKIBekLxMIX83xMlB3t7msZ3ZxwDtANVAHikr8Sm2/J6OKa5sxObAiLPD4muY+RmWyw5NpTru4281YLKAz56AJnMnK7glrQ9BvnoV/AMWp6R1pA9f4QwJhQWKDgCIIc/0lNMTpzPcw89g/ottuJqkXxQYbJKb1Kyvey2BjU0OZ0UUPomvjEpDSbLhiu1lX4O2oVYkRkAp/dBAMPLG16GLGQjbBXB/NAk24cKxN0y4pOwMKA4DIiLDEza9i7eaYFLiVh8jm6DlVA4MzR3pgHMGWgIfPvyor10L0ctGbOgmk7laW3IPocLYpspm0rCqixNnNMwly2+00IPUMhQTz+vR5A+LzfQ==" />
+</div>
+                    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('smDefault', 'theForm', ['tctl00$upDefault','ctl00_upDefault'], ['ctl00$ddlCategory','ddlCategory','ctl00$ddlCountry','ddlCountry','ctl00$ddlRegion','ddlRegion','ctl00$ddlCity','ddlCity','ctl00$ddlRuler','ddlRuler','ctl00$btnSetInventory','btnSetInventory'], [], 1200, '');
+//]]>
+</script>
+
+                    
+<link rel="stylesheet" type="text/css" href="/vendors/slick/slick.css" />
+<script type="text/javascript" src="/vendors/slick/slick.min.js"></script>
+<script type="text/javascript">
+    var tMirror;
+    String.prototype.splice = function (idx, rem, str) {
+        return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
+    };
+    $(document).scroll(function () {
+        var pOffsetHeight = 140;
+        //var pOffsetHeight = $('#pNavigation').height() + 90;
+        if ($(document).scrollTop() > pOffsetHeight) {
+            $('#pNavigation').css({ top: $(document).scrollTop() - pOffsetHeight });
+            $('#pFinalized').css({ top: $(document).scrollTop() - pOffsetHeight });
+        }
+        else {
+            $('#pNavigation').css({ top: '1px' });
+            $('#pFinalized').css({ top: '1px' });
+        }
+
+    })
+
+    function InsertCharacter(chars, aeEl) {
+        if (aeEl != "none") {
+            insertAtCaret(aeEl, chars);
+            setFinalize();
+        }
+    }
+    // From http://flightschool.acylt.com/devnotes/caret-position-woes/
+    function insertAtCaret(areaId, text) {
+        var txtarea = document.getElementById(areaId);
+        var scrollPos = txtarea.scrollTop;
+        var strPos = 0;
+        var br = ((txtarea.selectionStart || txtarea.selectionStart == '0') ?
+            "ff" : (document.selection ? "ie" : false));
+        if (br == "ie") {
+            txtarea.focus();
+            var range = document.selection.createRange();
+            range.moveStart('character', -txtarea.value.length);
+            strPos = range.text.length;
+        }
+        else if (br == "ff") strPos = txtarea.selectionStart;
+
+        var front = (txtarea.value).substring(0, strPos);
+        var back = (txtarea.value).substring(strPos, txtarea.value.length);
+        txtarea.value = front + text + back;
+        strPos = strPos + text.length;
+        if (br == "ie") {
+            txtarea.focus();
+            var range = document.selection.createRange();
+            range.moveStart('character', -txtarea.value.length);
+            range.moveStart('character', strPos);
+            range.moveEnd('character', 0);
+            range.select();
+        }
+        else if (br == "ff") {
+            txtarea.selectionStart = strPos;
+            txtarea.selectionEnd = strPos;
+            txtarea.focus();
+        }
+        txtarea.scrollTop = scrollPos;
+    }
+
+    function pageLoad() {
+
+        $("#divPreview").slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500,
+            nextArrow: $(".glyphicon-menu-right"),
+            prevArrow: $(".glyphicon-menu-left"),
+            autoplay: false,
+            swipe: false
+        });
+
+
+        if ($("#hfVenueError").val() === "false") {
+            new PNotify({
+                title: 'Venues',
+                text: 'Cannot remove some venues. Please contact administrator.',
+                type: 'error',
+                styling: 'bootstrap3'
+            });
+            $("#hfVenueError").val("");
+        }
+
+        $("#divLycian").hide();
+        $("#divAramaic").hide();
+        $("#divPunic").hide();
+
+        $("#btnLycian").click(function () {
+            showKeyboard("Lycian");
+        });
+        $("#btnGreek").click(function () {
+            showKeyboard("Greek");
+        });
+        $("#btnAramaic").click(function () {
+            showKeyboard("Aramaic");
+        });
+        $("#btnPunic").click(function () {
+            showKeyboard("Punic");
+        });
+
+        // Show Keyboard
+        function showKeyboard(Type) {
+            $("#divLycian").hide();
+            $("#divGreek").hide();
+            $("#divAramaic").hide();
+            $("#divPunic").hide();
+
+
+            switch (Type) {
+                case "Lycian":
+                    $("#divLycian").show();
+                    break;
+                case "Greek":
+                    $("#divGreek").show();
+                    break;
+                case "Aramaic":
+                    $("#divAramaic").show();
+                    break;
+                case "Punic":
+                    $("#divPunic").show();
+                    break;
+            }
+
+        }
+
+        // Conversion Rate display
+        var intCost = 0;
+        intCost = parseInt($("#txtCosts").val());
+        var fConversionRate = 0;
+        fConversionRate = parseFloat($("#txtConversionRate").val());
+        var fCostInCHF = intCost * fConversionRate;
+        if (fCostInCHF > 0) {
+            $("#divInCHF").html(fCostInCHF.toFixed(0) + " CHF");
+        }
+
+        // Key down Enter
+        $(window).keydown(function (event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                return false;
+            }
+        });
+
+        $('#btnSetInventory').on('click', function (e) {
+            e.preventDefault();
+            setFinalize();
+            $("#hfExternals").val($("#ddlExternal").val());
+            
+            var intVenues = [];
+
+            $("#ddlVenues option:selected").each(function () {
+                intVenues.push($(this).val());
+
+            });
+
+
+            $("#hfVenues").val(intVenues);
+            $('#theForm').parsley().validate();
+            validateFront();
+        });
+        var validateFront = function () {
+            if (true === $('#theForm').parsley().isValid()) {
+                $('.bs-callout-info').removeClass('hidden');
+                $('.bs-callout-warning').addClass('hidden');
+
+                new PNotify({
+                    title: 'Finalized',
+                    text: 'Inventory finalized and saved to database.',
+                    type: 'success',
+                    styling: 'bootstrap3'
+                });
+                $("#btnSaveInventory").click();
+            } else {
+                $('.bs-callout-info').addClass('hidden');
+                $('.bs-callout-warning').removeClass('hidden');
+            }
+        };
+
+        $("#btnMirror").click(function () {
+            var cursorStart = $("#txtMirror").prop("selectionStart");
+            var cursorEnd = $("#txtMirror").prop("selectionEnd");
+            var intLength = cursorEnd - cursorStart
+            if (intLength === 0) {
+
+                new PNotify({
+                    title: 'Mirroring',
+                    text: 'No selection made. You have to select the text in the text area and click on mirror selection.',
+                    type: 'error',
+                    styling: 'bootstrap3'
+                });
+            }
+            else {
+                var strSelectedText = $("#txtMirror").val().substring(cursorStart, cursorEnd);
+                if (strSelectedText.indexOf("<") === -1 && strSelectedText.indexOf(">") === -1) {
+
+                    $.ajax({
+                        url: "/backoffice/source/BackofficeService.asmx/SetMirroring",
+                        data: "{strUser:'" + $("#hfUser").val() + "', intInventoryID:'" + $("#txtInventoryID").val() + "', intStart:'" + cursorStart + "', intEnd:'" + cursorEnd + "', strText:'" + strSelectedText + "'}",
+                        type: "POST",
+                        dataType: "json",
+                        contentType: "application/json; charset=utf-8",
+                        success: function (response) {
+                            var intMirrorID = parseInt(response.d);
+                            if (intMirrorID === 0) {
+                                new PNotify({
+                                    title: 'Mirroring',
+                                    text: 'Insert not possible due to conflicting existing selection.',
+                                    type: 'error',
+                                    styling: 'bootstrap3'
+                                });
+                            }
+                            else {
+                                tMirror.ajax.reload(null, false);
+                                new PNotify({
+                                    title: 'Mirroring',
+                                    text: 'Insert successful.',
+                                    type: 'success',
+                                    styling: 'bootstrap3'
+                                });
+                            }
+
+                        }
+                    })
+
+                }
+                else {
+                    new PNotify({
+                        title: 'Mirroring',
+                        text: 'HTML Tag detected. HTML Tags are not allowed to be mirrored.',
+                        type: 'error',
+                        styling: 'bootstrap3'
+                    });
+                }
+            }
+        });
+
+        $("#txtMirror").click(function () {
+            var cursorStart = $("#txtMirror").prop("selectionStart");
+            var cursorEnd = $("#txtMirror").prop("selectionEnd");
+            $("#lblPosition").html("Start position: " + cursorStart);
+        });
+
+        tMirror = $("#tMirror").DataTable({
+            "processing": true,
+            "serverSide": true,
+            "autoWidth": false,
+            "stateSave": false,
+            "pageLength": 100,
+            "order": [[1, "desc"]],
+            "sDom": 'tri',
+            "ajax": function (data, callback, settings) {
+                $.when(GetMirror(data)).done(function (a1) {
+                    callback(jsonData);
+                });
+
+            },
+            "columns": [
+                { "data": "Text" },
+                { "data": "Start" },
+                { "data": "End" },
+                { "data": "Option" }
+            ],
+            "columnDefs": [
+                {
+                    "targets": 0,
+                    "searchable": false,
+                    "orderable": false,
+
+                },
+                {
+                    "targets": 1,
+                    "searchable": false,
+                    "orderable": false,
+
+                },
+                {
+                    "targets": 2,
+                    "searchable": false,
+                    "orderable": false,
+
+                },
+                {
+                    "targets": 3,
+                    "render": function (data, type, full, meta) {
+                        return '<button class="btn btn-primary btn-xs btn-remove" type="button" PK_ID="' + full.ID + '">Remove</button>';
+                    },
+                    "searchable": false,
+                    "orderable": false,
+
+                }
+            ]
+        });
+        tMirror.on("draw", function () {
+            setFinalize();
+        });
+
+
+        $("#iInventories").ionRangeSlider({
+            type: "single",
+            min: $("#hfMinInventory").val(),
+            max: $("#hfMaxInventory").val(),
+            from: $("#hfInventoryID").val(),
+            step: 1,
+            keyboard: true,
+            onChange: function (data) {
+                $("#txtInventoryID").val(data.from);
+            },
+            onFinish: function (data) {
+                $("#btnSliderFinish").click();
+            },
+            onUpdate: function (data) {
+                console.log("onUpdate");
+            }
+
+        });
+
+        $(".form-control").focus(function () {
+            $("#divInputToolbar").hide();
+        });
+
+        $("#txtObvLegend,#txtObvLegendDesc,#txtRevLegend,#txtRevLegendDesc").focus(function () {
+            $("#divInputToolbar").show();
+            $("#divInputToolbar").appendTo($(this).parent());
+
+        });
+
+        // AUTOCOMPLETE
+        var intInventoryArray = $("#hfInventoryNumberArray").val().split(',');
+        $('#txtInventoryID').autocomplete({
+            minChars: 3,
+            lookup: intInventoryArray,
+            onSelect: function () {
+                $("#btnSliderFinish").click();
+            }
+        });
+
+        var jsonDates = [];
+        if ($("#hfDates").val().length > 0) {
+            jsonDates = JSON.parse($("#hfDates").val());
+        }
+
+        $('#txtDate').autocomplete({
+            lookup: jsonDates,
+            minChars: 0,
+            onSelect: function (suggestion) {
+                if ($("#txtReferences").val() === "") {
+                    $("#txtReferences").val(suggestion.data);
+                }
+                setFinalize();
+            }
+        }).focus(function () {
+            $(this).autocomplete('search', $(this).val());
+        });
+
+        // DATE PICKER
+        $('.calendar').datepicker({
+            format: "dd.mm.yyyy",
+            todayBtn: "linked",
+            autoclose: true,
+            todayHighlight: true
+        });
+
+        $(".select2_single").chosen();
+
+        // CONSINGNOR AUTOCOMPLETE
+
+        $("#txtConsignor").autocomplete({
+            lookup: function (query, done) {
+                $.ajax({
+                    url: "/backoffice/source/BackofficeService.asmx/GetConsignors",
+                    data: "{query:'" + query + "'}",
+                    type: "POST",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (response) {
+                        var result = { suggestions: [] };
+                        var json = JSON.parse(response.d);
+                        result.suggestions = json;
+                        done(result);
+                    }
+                })
+            },
+            onSelect: function (suggestion) {
+                $("#txtConsignorID").val(suggestion.data);
+            }
+
+        });
+
+
+        //#region ############### SET FINALZE ################
+
+        $(".form-control").keyup(function (e) {
+            setFinalize();
+        });
+        $("#ddlDenomination, #ddlMetal, #ddlCategory, #ddlCountry, #ddlRegion, #ddlCity, #ddlRuler, #ddlDie, #ddlGrade").change(function () {
+            setFinalize();
+        })
+
+        $("#txtToning").keyup(function () {
+            if ($("#txtToning").val() === "") {
+                $("#cbOtherwise").prop("checked", false);
+            }
+        });
+        //#region ############### END SET FINALIZE ################
+
+
+        autosize($('.resizable_textarea'));
+
+        $("input.flat").iCheck({
+            checkboxClass: "icheckbox_flat-green",
+            radioClass: "iradio_flat-green"
+        });
+
+        $('input.flat').on('ifChecked', function (event) {
+            setFinalize();
+        });
+        $('input.flat').on('ifUnchecked', function (event) {
+            setFinalize();
+        });
+
+        $('.collapse-link').unbind();
+        $('.collapse-link').on('click', function () {
+
+            var $BOX_PANEL = $(this).closest('.x_panel'),
+                $ICON = $(this).find('i'),
+                $BOX_CONTENT = $BOX_PANEL.find('.x_content');
+
+
+            var strCollPanel = $("#hfCollapsedPanel").val();
+            if (strCollPanel.indexOf($BOX_CONTENT.attr("id")) < 0) {
+                $("#hfCollapsedPanel").val($("#hfCollapsedPanel").val() + "," + $BOX_CONTENT.attr("id"));
+            }
+            else {
+                $("#hfCollapsedPanel").val($("#hfCollapsedPanel").val().substring("," + $BOX_CONTENT.attr("id"), ""));
+            }
+
+            // fix for some div with hardcoded fix class
+            if ($BOX_PANEL.attr('style')) {
+                $BOX_CONTENT.slideToggle(200, function () {
+                    $BOX_PANEL.removeAttr('style');
+                });
+            } else {
+                $BOX_CONTENT.slideToggle(200);
+                $BOX_PANEL.css('height', 'auto');
+            }
+
+            $ICON.toggleClass('fa-chevron-up fa-chevron-down');
+
+        });
+
+    };
+
+    $(document).on("click", ".btn-remove", function (e) {
+        var PK_ID = $(this).attr("PK_ID");
+
+        bootbox.confirm({
+            message: "Are you sure you want to remove this section?",
+            buttons: {
+                confirm: {
+                    label: 'Yes',
+                    className: 'btn-success'
+                },
+                cancel: {
+                    label: 'No',
+                    className: 'btn-danger'
+                }
+            },
+            callback: function (result) {
+                if (result === true) {
+
+                    $.ajax({
+                        url: "/backoffice/source/BackofficeService.asmx/DelMirror",
+                        data: "{strUser:'" + $("#hfUser").val() + "', intMirrorID:'" + PK_ID + "'}",
+                        type: "POST",
+                        dataType: "json",
+                        contentType: "application/json; charset=utf-8",
+                        success: function (response) {
+                            tMirror.ajax.reload(null, false);
+
+                            new PNotify({
+                                title: 'Mirroring',
+                                text: 'Remove successful.',
+                                type: 'success',
+                                styling: 'bootstrap3'
+                            });
+
+                        }
+                    })
+                }
+            }
+        });
+
+    });
+
+
+    Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(BeginRequestHandler);
+    Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+    function BeginRequestHandler(sender, args) {
+        $("#loading-indicator").show();
+    }
+    function EndRequestHandler(sender, args) {
+        setFinalize();
+
+        var strCollArray = $("#hfCollapsedPanel").val().split(",");
+        $.each(strCollArray, function (i, value) {
+            if (value != "") {
+                var $BOX_CONTENT = $("#" + value);
+                $BOX_CONTENT.hide();
+                var $ICON = $BOX_CONTENT.parent().find("i");
+                $ICON.toggleClass('fa-chevron-up fa-chevron-down');
+            }
+        });
+
+        var pOffsetHeight = 140;
+        //var pOffsetHeight = $('#pNavigation').height() + 90;
+        if ($(document).scrollTop() > pOffsetHeight) {
+            $('#pNavigation').css({ top: $(document).scrollTop() - pOffsetHeight });
+            $('#pFinalized').css({ top: $(document).scrollTop() - pOffsetHeight });
+        }
+        else {
+            $('#pNavigation').css({ top: '1px' });
+            $('#pFinalized').css({ top: '1px' });
+        }
+
+        var intAutoOpenCiteria = 2;
+        var strAsyncPrefix = "ctl00$";
+        var strSender = sender._postBackSettings.asyncTarget;
+        if (strSender != null) {
+            strSender = strSender.replace(strAsyncPrefix, "");
+
+            switch (strSender) {
+                case "ddlCategory":
+                    if ($("#ddlCountry").children("option").length > intAutoOpenCiteria) {
+                        $("#ddlCountry").trigger("chosen:open");
+                    }
+                    else {
+                        if ($("#ddlRegion").children("option").length > intAutoOpenCiteria) {
+                            $("#ddlRegion").trigger("chosen:open");
+                        }
+                        else {
+                            if ($("#ddlCity").children("option").length > intAutoOpenCiteria) {
+                                $("#ddlCity").trigger("chosen:open");
+                            }
+                            else {
+                                if ($("#ddlRuler").children("option").length > intAutoOpenCiteria) {
+                                    $("#ddlRuler").trigger("chosen:open");
+                                }
+                                else {
+                                    $("#txtDate").focus();
+                                }
+                            }
+                        }
+                    }
+                    break;
+                case "ddlCountry":
+                    if ($("#ddlRegion").children("option").length > intAutoOpenCiteria) {
+                        $("#ddlRegion").trigger("chosen:open");
+                    }
+                    else {
+                        if ($("#ddlCity").children("option").length > intAutoOpenCiteria) {
+                            $("#ddlCity").trigger("chosen:open");
+                        }
+                        else {
+                            if ($("#ddlRuler").children("option").length > intAutoOpenCiteria) {
+                                $("#ddlRuler").trigger("chosen:open");
+                            }
+                            else {
+                                $("#txtDate").focus();
+                            }
+                        }
+                    }
+                    break;
+                case "ddlRegion":
+                    if ($("#ddlCity").children("option").length > intAutoOpenCiteria) {
+                        $("#ddlCity").trigger("chosen:open");
+                    }
+                    else {
+                        if ($("#ddlRuler").children("option").length > intAutoOpenCiteria) {
+                            $("#ddlRuler").trigger("chosen:open");
+                        }
+                        else {
+                            $("#txtDate").focus();
+                        }
+                    }
+                    break;
+                case "ddlCity":
+                    if ($("#ddlRuler").children("option").length > intAutoOpenCiteria) {
+                        $("#ddlRuler").trigger("chosen:open");
+                    }
+                    else {
+                        $("#txtDate").focus();
+                    }
+                    break;
+                case "ddlRuler":
+                    $("#txtDate").focus();
+                    break;
+                default:
+                    break;
+
+            }
+        }
+        $("#loading-indicator").hide();
+
+    }
+
+    function clearFilter() {
+        $.when(SetSessionState()).done(function (a1) {
+            document.location.href = 'default.aspx?page=ucInventory&id=' + $("#txtInventoryID").val();
+        });
+    }
+    function SetSessionState() {
+        return $.ajax({
+            type: "POST",
+            url: "/backoffice/source/BackofficeService.asmx/SetSessionState",
+            data: "{strState:'FilterArray', strData:''}",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (response) {
+                return true;
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        });
+    }
+    function GetMirror(data) {
+        return $.ajax({
+            type: "POST",
+            url: "/backoffice/source/BackofficeService.asmx/GetMirrors",
+            data: "{strUser:'" + $("#hfUser").val() + "', json:'" + JSON.stringify(data) + "', intInventoryID:'" + $("#txtInventoryID").val() + "'}",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (response) {
+                jsonData = JSON.parse(response.d);
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        });
+    }
+    //#region ############### FINALIZE ################
+    function setFinalize() {
+
+        var strEndsWith;
+        //$("#lblFinal").css("word-wrap", "break-word");
+
+        // Conversion rate
+        var intCost = 0;
+        intCost = parseInt($("#txtCosts").val());
+        var fConversionRate = 0;
+        fConversionRate = parseFloat($("#txtConversionRate").val());
+        var fCostInCHF = intCost * fConversionRate;
+        if (fCostInCHF > 0) {
+            $("#divInCHF").html(fCostInCHF.toFixed(0) + " CHF");
+        }
+
+        // Category
+        var NOT_APPLICABLE = "n/a";
+
+        var strCategoryFinalize = "";
+        var bQuestionCity = $("#cbQuestionCity").is(":checked");
+        var bQuestionRuler = $("#cbQuestionRuler").is(":checked");
+        var strCountryName = $("#ddlCountry option:selected").text();
+        var strRegionName = $("#ddlRegion option:selected").text();
+        var strCityName = $("#ddlCity option:selected").text() + (bQuestionCity === true ? " (?)" : "");
+        var strRulerName = $("#ddlRuler option:selected").text() + (bQuestionRuler === true ? " (?)" : "");
+        var strDateName = $("#txtDate").val();
+
+        if (strDateName == "1" || strDateName == "-1") {
+            strDateName = "";
+        }
+        if (strDateName.indexOf(NOT_APPLICABLE) >= 0) {
+            strDateName = NOT_APPLICABLE;
+        }
+
+        strCategoryFinalize = "<b>";
+
+
+        // COUNTRY, Region.
+        if (strCountryName != "" && strCountryName != "0" && strCountryName != NOT_APPLICABLE && strCountryName != "None") {
+            strCategoryFinalize += strCountryName.toUpperCase();
+        }
+        if (strRegionName != "" && strRegionName != "0" && strRegionName != NOT_APPLICABLE && strRegionName != "None") {
+            if (strCountryName != "" && strCountryName != "0" && strCountryName != NOT_APPLICABLE && strCountryName != "None") {
+                strCategoryFinalize += ", ";
+                strCategoryFinalize += strRegionName;
+                strCategoryFinalize += ". ";
+            }
+            else {
+                strCategoryFinalize += strRegionName;
+                strCategoryFinalize += ". ";
+            }
+        }
+        else {
+            if (strCountryName != "" && strCountryName != "0" && strCountryName != NOT_APPLICABLE && strCountryName != "None") {
+                strCategoryFinalize += ". ";
+            }
+        }
+
+        // City
+        if (strCityName != "" && strCityName != "0" && strCityName != NOT_APPLICABLE && strCityName != "None") {
+            strCategoryFinalize += strCityName;
+            if (strRulerName != "" && strRulerName != "0" && strRulerName != NOT_APPLICABLE && strRulerName != "None") {
+                strCategoryFinalize += ". ";
+            }
+            else {
+                if (strDateName != "" && strDateName != "0" && strDateName != NOT_APPLICABLE && strDateName != "None") {
+                    strCategoryFinalize += ". ";
+                }
+            }
+        }
+
+        // Ruler. Date of Ruler.
+        var intLastIndex = strDateName.lastIndexOf(")");
+        var intFirstIndex = strDateName.indexOf("(");
+
+        strDateName = strDateName.replace("Century", "century");
+
+        if (intFirstIndex > 0 && intLastIndex > intFirstIndex) {
+
+            var strDateSubstring = strDateName.substring(intFirstIndex - 1, intLastIndex + 1);
+            strDateName = strDateName.replace(strDateSubstring, "");
+        }
+
+        if (strRulerName != "" && strRulerName != "0" && strRulerName != NOT_APPLICABLE && strRulerName != "None") {
+            if (strRegionName != "" && strRegionName != "0" && strRegionName != NOT_APPLICABLE && strRegionName != "None") {
+                strCategoryFinalize += "<i>" + strRulerName + "</i>";
+            }
+            else {
+                if (strCityName != "" && strCityName != "0" && strCityName != NOT_APPLICABLE && strCityName != "None") {
+                    strCategoryFinalize += "<i>" + strRulerName + "</i>";
+                }
+                else {
+                    strCategoryFinalize += strRulerName;
+                }
+            }
+
+        }
+        else {
+            if (strDateName.indexOf("circa") === 0) {
+                strDateName = strDateName.replace("circa", "Circa");
+            }
+            if (strDateName.indexOf("late") === 0) {
+                strDateName = strDateName.replace("late", "Late");
+            }
+            if (strDateName.indexOf("mid-late") === 0) {
+                strDateName = strDateName.replace("mid-late", "Mid-late");
+            }
+            if (strDateName.indexOf("mid") === 0) {
+                strDateName = strDateName.replace("mid", "Mid");
+            }
+            if (strDateName.indexOf("early") === 0) {
+                strDateName = strDateName.replace("early", "Early");
+            }
+            if (strDateName.indexOf("early-mid") === 0) {
+                strDateName = strDateName.replace("early-mid", "Early-mid");
+            }
+
+        }
+        if (strDateName != "" && strDateName != "0" && strDateName != NOT_APPLICABLE && strDateName != "None") {
+            if (strRulerName != "" && strRulerName != "0" && strRulerName != NOT_APPLICABLE && strRulerName != "None") {
+                strCategoryFinalize += ", ";
+                strCategoryFinalize += strDateName;
+                strCategoryFinalize += ".";
+            }
+            else {
+                strCategoryFinalize += strDateName;
+                strCategoryFinalize += ".";
+            }
+        }
+        else {
+            if ((strDateName != "" && strDateName != "0" && strDateName != NOT_APPLICABLE && strDateName != "None") || (strRulerName != "" && strRulerName != "0" && strRulerName != NOT_APPLICABLE && strRulerName != "None") || (strCityName != "" && strCityName != "0" && strCityName != NOT_APPLICABLE && strCityName != "None")) {
+                strCategoryFinalize += ".";
+            }
+        }
+
+
+        strCategoryFinalize += "</b> ";
+
+
+        var varDenomination = $("#ddlDenomination option:selected").text();
+        var varMetal = $("#ddlMetal option:selected").text();
+        var varDiameter = $("#txtDiameter").val();
+        var varWeight = $("#txtWeight").val();
+        var varDie = $("#ddlDie option:selected").text();
+        var varStandard = $("#txtStandard").val();
+        var varMint = $("#txtMint").val();
+        var varStruck = $("#txtStruck").val();
+        var varGrade = $("#ddlGrade option:selected").text();
+        var varDefects = $("#txtToning").val();
+        var bOtherwise = $("#cbOtherwise").is(":checked");
+        var bQuestion = $("#cbQuestion").is(":checked");
+        var bQuotation = $("#cbQuotation").is(":checked");
+
+        var varObvLegend = $("#txtObvLegend").val();
+
+        var varObvLegendDesc = $("#txtObvLegendDesc").val();
+        var strEndsWith = varObvLegendDesc.lastIndexOf("\n");
+        while (strEndsWith > 0) {
+            if (varObvLegendDesc.length - 1 == strEndsWith) {
+                varObvLegendDesc = varObvLegendDesc.substring(0, strEndsWith);
+                strEndsWith = varObvLegendDesc.lastIndexOf("\n");
+            }
+            else {
+                break;
+            }
+        }
+        varObvLegendDesc = varObvLegendDesc.replace(/\n/g, "<br />");
+
+        var varRevLegend = $("#txtRevLegend").val();
+
+        var varRevLegendDesc = $("#txtRevLegendDesc").val();
+        strEndsWith = varRevLegendDesc.lastIndexOf("\n");
+        while (strEndsWith > 0) {
+            if (varRevLegendDesc.length - 1 == strEndsWith) {
+                varRevLegendDesc = varRevLegendDesc.substring(0, strEndsWith);
+                strEndsWith = varRevLegendDesc.lastIndexOf("\n");
+            }
+            else {
+                break;
+            }
+        }
+        varRevLegendDesc = varRevLegendDesc.replace(/\n/g, "<br />");
+
+        var varComments = $("#txtComments").val();
+        strEndsWith = varComments.lastIndexOf("\n");
+        while (strEndsWith > 0) {
+            if (varComments.length - 1 == strEndsWith) {
+                varComments = varComments.substring(0, strEndsWith);
+                strEndsWith = varComments.lastIndexOf("\n");
+            }
+            else {
+                break;
+            }
+        }
+        varComments = varComments.replace(/\n/g, "<br />");
+
+        var varNotes = $("#txtNotes").val();
+        strEndsWith = varNotes.lastIndexOf("\n");
+        while (strEndsWith > 0) {
+            if (varNotes.length - 1 == strEndsWith) {
+                varNotes = varNotes.substring(0, strEndsWith);
+                strEndsWith = varNotes.lastIndexOf("\n");
+            }
+            else {
+                break;
+            }
+        }
+        varNotes = varNotes.replace(/\n/g, "<br />");
+
+        var varReference = $("#txtReferences").val();
+        strEndsWith = varReference.lastIndexOf("\n");
+        while (strEndsWith > 0) {
+            if (varReference.length - 1 == strEndsWith) {
+                varReference = varReference.substring(0, strEndsWith);
+                strEndsWith = varReference.lastIndexOf("\n");
+            }
+            else {
+                break;
+            }
+        }
+        varReference = varReference.replace(/\n/g, "<br />");
+
+        var strPedigrees = $("#txtPedigree").val();
+
+        if (varDenomination == "None") {
+            varDenomination = "";
+        }
+        if (varMetal == "None") {
+            varMetal = "";
+        }
+        if (varGrade == "None") {
+            varGrade = "";
+        }
+
+        var varFinalizedNotes = "";
+        var varDescription = strCategoryFinalize;
+
+        if (varDenomination != "" && varDenomination != "0") {
+            if (bQuotation === true) {
+                varDescription += "'" + varDenomination + "'";
+            }
+            else {
+                varDescription += varDenomination;
+            }
+
+            if (bQuestion === true) {
+                varDescription += " (?)";
+            }
+        }
+        if ((varMetal != "" && varMetal != "0") || (varDiameter != "" && varDiameter != "0") || (varWeight != "" && varWeight != "0" && varWeight != "0.00") || (varDie != "" && varDie != "0" && varDie != "N/A")) {
+            if (varDenomination != "" && varDenomination != "0") {
+                varDescription += " (";
+            }
+            else {
+                varDescription += "(";
+            }
+
+            // METAL
+            if (varMetal != "" && varMetal != "0") {
+                varDescription += varMetal;
+            }
+
+            if (varDiameter != "" && varDiameter != "0") {
+                if (varMetal != "" && varMetal != "0") {
+                    varDescription += ", ";
+                    varDescription += varDiameter;
+                    varDescription += " mm";
+                }
+                else {
+                    varDescription += varDiameter;
+                    varDescription += " mm";
+                }
+            }
+
+            if (varWeight != "" && varWeight != "0.00") {
+                if (varDiameter != "" && varDiameter != "0") {
+                    varDescription += ", ";
+                    varDescription += varWeight;
+                    varDescription += " g";
+                }
+                else {
+                    if (varMetal != "" && varMetal != "0") {
+                        varDescription += ", ";
+                        varDescription += varWeight;
+                        varDescription += " g";
+                    }
+                    else {
+                        varDescription += varWeight;
+                        varDescription += " g";
+                    }
+                }
+            }
+
+            if (varDie != "" && varDie != "0" && varDie != "N/A") {
+                if (varWeight != "" && varWeight != "0.00") {
+                    varDescription += ", ";
+                    varDescription += varDie;
+                    varDescription += " h";
+                }
+                else {
+                    if (varMetal != "" && varMetal != "0") {
+                        varDescription += ", ";
+                        varDescription += varDie;
+                        varDescription += " h";
+                    }
+                    else {
+                        varDescription += varDie;
+                        varDescription += " h";
+                    }
+                }
+            }
+
+            if (varStandard == "" && varMint == "" && varStruck == "") {
+                varDescription += "). ";
+            }
+            else {
+                varDescription += "), ";
+            }
+        }
+
+
+        // Standard, Mint, Struck
+        if (varStandard != "" && varStandard != "0") {
+            varDescription += varStandard;
+
+            if (varMint == "" || varMint == "0") {
+                if (varStruck == "" || varStruck == "0") {
+                    varDescription += ". ";
+                }
+                else {
+                    varDescription += ", ";
+                }
+            }
+            else {
+                varDescription += ", ";
+            }
+        }
+
+        if (varMint != "" && varMint != "0") {
+            varDescription += varMint;
+
+            if (varStruck == "" || varStruck == "0") {
+                varDescription += ". ";
+            }
+            else {
+                varDescription += ", ";
+            }
+        }
+
+        if (varStruck != "" && varStruck != "0") {
+            varDescription += varStruck;
+            varDescription += ". ";
+        }
+
+        // OBV LEGEND OBV Description
+        if (varObvLegend != "") {
+            if (varObvLegendDesc != "") {
+                varDescription += varObvLegend;
+            }
+            else {
+                varDescription += varObvLegend + ".";
+            }
+        }
+        if (varObvLegendDesc != "") {
+            var strTrimmedObvDesc = varObvLegendDesc.trim();
+            var strObvdot = "";
+            if (strTrimmedObvDesc != "") {
+                var strEndsWith = strTrimmedObvDesc.match(".$");
+                if (strEndsWith == ".") {
+                    strObvdot = "";
+                }
+                else {
+                    strObvdot = ".";
+                }
+            }
+
+            if (varObvLegend != "") {
+                varDescription += " " + varObvLegendDesc + strObvdot;
+            }
+            else {
+                varDescription += varObvLegendDesc + strObvdot;
+            }
+        }
+
+        // REV LEGEND OBV Description
+        if (varRevLegend != "" || varRevLegendDesc != "") {
+            varDescription += " <i>Rev.</i> ";
+        }
+        if (varRevLegend != "") {
+            if (varRevLegendDesc != "") {
+                varDescription += varRevLegend;
+            }
+            else {
+                varDescription += varRevLegend + ".";
+            }
+        }
+        if (varRevLegendDesc != "") {
+            var strTrimmedRevDesc = varRevLegendDesc.trim();
+            var strRevdot = "";
+            if (strTrimmedRevDesc != "") {
+                var strEndsWith = strTrimmedRevDesc.match(".$");
+                if (strEndsWith == ".") {
+                    strRevdot = "";
+                }
+                else {
+                    strRevdot = ".";
+                }
+            }
+
+            if (varRevLegend != "") {
+                varDescription += " " + varRevLegendDesc + strRevdot;
+            }
+            else {
+                varDescription += varRevLegendDesc + strRevdot;
+            }
+        }
+
+        // Reference
+        if (varReference != "") {
+            var strTrimmedRef = varReference.trim();
+            var strRefdot = "";
+            if (strTrimmedRef != "") {
+                var strEndsWith = strTrimmedRef.match(".$");
+                if (strEndsWith == ".") {
+                    strRefdot = "";
+                }
+                else {
+                    strRefdot = ".";
+                }
+            }
+            varDescription += " " + varReference + strRefdot;
+        }
+
+        // Comments
+        if (varComments != "") {
+            var strTrimmedComments = varComments.trim();
+            var strCommentdot = "";
+            if (strTrimmedComments != "") {
+                var strEndsWith = strTrimmedComments.match(".$");
+                if (strEndsWith == ".") {
+                    strCommentdot = "";
+                }
+                else {
+                    strCommentdot = ".";
+                }
+            }
+            varDescription += " " + varComments + strCommentdot;
+        }
+
+        // Defects
+        if (varDefects != "") {
+            var strTrimmedDefects = varDefects.trim();
+            var strDefectdot = "";
+            if (strTrimmedDefects != "") {
+                var strEndsWith = strTrimmedDefects.match(".$");
+                if (strEndsWith == ".") {
+                    strDefectdot = "";
+                }
+                else {
+                    strDefectdot = ".";
+                }
+            }
+            //varDescription += " " + varDefects + strDefectdot;
+
+            // Otherwise
+            if (bOtherwise === true) {
+                strDefectdot = ",</i> ";
+                varDefects += "<i>, otherwise";
+            }
+
+            varDescription += " " + varDefects + strDefectdot;
+        }
+
+        // Grade 
+        if (varGrade != "") {
+            if (bOtherwise === true) {
+                if (varGrade !== "FDC" && varGrade !== "UNC") {
+                    varGrade = varGrade.toLowerCase();
+                }
+            }
+            varDescription += " " + varGrade + ".";
+        }
+
+        var strTrimmedNotes = varNotes.trim();
+        var strNotedot = "";
+        if (strTrimmedNotes != "") {
+            var strEndsWith = strTrimmedNotes.match(".$");
+            if (strEndsWith == "." || strEndsWith == "?" || strEndsWith == "!") {
+                strNotedot = "";
+            }
+            else {
+                strNotedot = ".";
+            }
+        }
+
+        var strTrimmedPedigrees = strPedigrees.trim();
+        var strPedigreedot = "";
+        if (strTrimmedPedigrees != "") {
+            var strEndsWith = strTrimmedPedigrees.match(".$");
+            if (strEndsWith == ".") {
+                strPedigreedot = "";
+            }
+            else {
+                strPedigreedot = ".";
+            }
+        }
+
+        if (strPedigrees != "" || varNotes != "") {
+            varDescription = varDescription + "<br /><br /><br />";
+        }
+
+        if (strPedigrees != "") {
+            varDescription += "<i>" + strPedigrees + strPedigreedot + "</i>";
+        }
+        if (varNotes != "") {
+            if (strPedigrees != "") {
+                varFinalizedNotes += "<br />";
+            }
+            varFinalizedNotes += varFinalizedNotes + varNotes + strNotedot;
+            varDescription = varDescription + varFinalizedNotes;
+
+        }
+
+        if ($("#txtMultipleLots").val() !== "") {
+            varDescription = $("#txtMultipleLots").val() + "<br /><br /><br /><i>" + strPedigrees + strPedigreedot + "</i>";
+        }
+
+        // Mirror
+        var varPreviewDescription = varDescription;
+        var strStartTag = "<span style='display: inline-block; -moz-transform: scale(-1, 1); -webkit-transform: scale(-1, 1); -o-transform: scale(-1, 1); -ms-transform: scale(-1, 1); transform: scale(-1, 1);'>";
+        var strEndTag = "</span>"; $
+        tMirror.rows().every(function (rowIdx, tableLoop, rowLoop) {
+            var data = this.data();
+
+            varPreviewDescription = [varPreviewDescription.slice(0, data.End), strEndTag, varPreviewDescription.slice(data.End)].join('');
+            varPreviewDescription = [varPreviewDescription.slice(0, data.Start), strStartTag, varPreviewDescription.slice(data.Start)].join('');
+
+        });
+
+        $("#txtMirror").html(varDescription);
+        $("#divFinalized").html(varPreviewDescription);
+        $("#hfFinalizedNotes").val(varFinalizedNotes);
+        $("#hfFinalized").val(varDescription);
+
+        var fRatio = 100 / 17;
+        var fPercentage = 0.00;
+        fPercentage = varDenomination === "" ? 0 : fRatio;
+        fPercentage += varMetal === "" ? 0 : fRatio;
+
+        fPercentage += varDiameter === "" ? 0 : fRatio;
+        fPercentage += varWeight === "" ? 0 : fRatio;
+
+        fPercentage += varStandard === "" ? 0 : fRatio;
+        fPercentage += varMint === "" ? 0 : fRatio;
+        fPercentage += varStruck === "" ? 0 : fRatio;
+        fPercentage += varObvLegend === "" ? 0 : fRatio;
+        fPercentage += varObvLegendDesc === "" ? 0 : fRatio;
+        fPercentage += varRevLegend === "" ? 0 : fRatio;
+        fPercentage += varRevLegendDesc === "" ? 0 : fRatio;
+        fPercentage += varComments === "" ? 0 : fRatio;
+        fPercentage += varReference === "" ? 0 : fRatio;
+
+        fPercentage += varGrade === "" ? 0 : fRatio;
+
+        fPercentage += varDefects === "" ? 0 : fRatio;
+        fPercentage += varNotes === "" ? 0 : fRatio;
+        fPercentage += strPedigrees === "" ? 0 : fRatio;
+
+        $("#sPercentage").html(fPercentage.toFixed(1) + "%");
+
+
+
+    }
+    //#endregion ############### FINALIZE ################
+
+</script>
+<div id="ctl00_upDefault">
+	
+        <div class="row">
+            
+            <div class="col-sm-7 col-xs-12">
+                <!-- Left column panels -->
+                
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Inventory Information <small>
+                            Last modified on 22.08.2018 by lars</small></h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content" id="x_c_inventory">
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Category:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <select name="ctl00$ddlCategory" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ddlCategory\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlCategory" class="select2_single form-control">
+		<option value="0">Select a Category...</option>
+		<option value="4">Greek</option>
+		<option value="6">Oriental Greek</option>
+		<option value="5">Central Asian</option>
+		<option value="3">Roman Provincial</option>
+		<option value="7">Roman Republican &amp; Imperatorial</option>
+		<option value="8">Roman Imperial</option>
+		<option value="9">Byzantine</option>
+		<option selected="selected" value="1">Early Medieval &amp; Islamic</option>
+		<option value="2">World</option>
+		<option value="17">Miscellaneous</option>
+		<option value="16">Group Lots</option>
+		<option value="14">n/a</option>
+
+	</select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Country:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <select name="ctl00$ddlCountry" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ddlCountry\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlCountry" class="select2_single form-control">
+		<option value="0">Select a Country...</option>
+		<option value="1">MEROVINGIANS</option>
+		<option value="2">CAROLINGIANS</option>
+		<option value="3">AXUM</option>
+		<option value="4">CRUSADERS</option>
+		<option value="93">LOMBARDS</option>
+		<option selected="selected" value="95">ISLAMIC</option>
+		<option value="114">SUB-BYZANTINE</option>
+		<option value="115">POST-SASANIAN</option>
+		<option value="231">VANDALS</option>
+		<option value="232">OSTROGOTHS</option>
+		<option value="233">VISIGOTHS</option>
+		<option value="234">BURGUNDIANS</option>
+		<option value="235">SUEVI</option>
+		<option value="236">GEPIDS</option>
+		<option value="237">FRANKS</option>
+		<option value="238">AVARS</option>
+		<option value="239">UNCERTAIN GERMANIC TRIBES</option>
+		<option value="293">UNCERTAIN TRIBES</option>
+
+	</select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Region:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <select name="ctl00$ddlRegion" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ddlRegion\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlRegion" class="select2_single form-control">
+		<option value="0">Select a Region...</option>
+		<option value="316">&#39;Abbasid Caliphate</option>
+		<option value="137">al-Andalus (Spain)</option>
+		<option value="237">al-Maghreb (North Africa)</option>
+		<option value="341">Anatolia &amp; al-Jazira (Post-Mongol)</option>
+		<option value="337">Anatolia &amp; al-Jazira (Post-Seljuk)</option>
+		<option value="239">Arabia</option>
+		<option value="192">Ayyubids</option>
+		<option value="383">Caucasus (Post-Mongol)</option>
+		<option value="338">Caucasus (Post-Seljuk)</option>
+		<option value="243">Caucasus (Pre-Seljuq)</option>
+		<option value="238">Egypt &amp; Syria (Pre-Fatimid)</option>
+		<option value="240">Fatimids</option>
+		<option value="415">Islamic Seals</option>
+		<option value="392">Islamic Weights</option>
+		<option value="241">Mamluks</option>
+		<option value="340">Mongols</option>
+		<option value="139">Ottoman Empire</option>
+		<option value="138">Persia (Post-Mongol)</option>
+		<option value="339">Persia (Post-Seljuk)</option>
+		<option value="244">Persia (Pre-Seljuq)</option>
+		<option value="245">Seljuks</option>
+		<option value="242">Syria &amp; al-Jazira (Pre-Seljuq)</option>
+		<option value="134">Time of Muhammad &amp; the Rashidun</option>
+		<option value="135">Time of the Rashidun</option>
+		<option selected="selected" value="136">Umayyad Caliphate</option>
+
+	</select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">City:</label>
+                            <div class="col-md-7 col-sm-7 col-xs-12">
+                                <select name="ctl00$ddlCity" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ddlCity\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlCity" class="select2_single form-control">
+		<option value="0">Select a City...</option>
+		<option selected="selected" value="438">n/a</option>
+
+	</select>
+                            </div>
+                            <div class="checkbox col-md-2 col-sm-2 col-xs-12">
+                                <label>
+                                    <div class="icheckbox_flat-green" style="position: relative;">
+                                        <input name="ctl00$cbQuestionCity" type="checkbox" id="cbQuestionCity" class="flat" style="position: absolute; opacity: 0;" />
+                                        <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins>
+                                    </div>
+                                    (?)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Ruler:</label>
+                            <div class="col-md-7 col-sm-7 col-xs-12">
+                                <select name="ctl00$ddlRuler" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ddlRuler\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlRuler" class="select2_single form-control">
+		<option value="0">Select a Ruler...</option>
+		<option value="1769">Mu&#39;awiya ibn Abi Sufyan</option>
+		<option value="1770">&lt;i&gt;temp.&lt;/i&gt; Mu&#39;awiya I ibn Abi Sufyan</option>
+		<option value="1770">&lt;i&gt;temp.&lt;/i&gt; Mu&#39;awiya I ibn Abi Sufyan</option>
+		<option value="1770">&lt;i&gt;temp.&lt;/i&gt; Mu&#39;awiya I ibn Abi Sufyan</option>
+		<option value="1771">&lt;i&gt;temp.&lt;/i&gt; Yazid I ibn Mu&#39;awiya</option>
+		<option value="1771">&lt;i&gt;temp.&lt;/i&gt; Yazid I ibn Mu&#39;awiya</option>
+		<option value="1771">&lt;i&gt;temp.&lt;/i&gt; Yazid I ibn Mu&#39;awiya</option>
+		<option value="1772">&#39;Abd Allah ibn al-Zubayr</option>
+		<option value="1772">&#39;Abd Allah ibn al-Zubayr</option>
+		<option value="1773">&lt;i&gt;temp.&lt;/i&gt; &#39;Abd Allah ibn al-Zubayr</option>
+		<option value="1773">&lt;i&gt;temp.&lt;/i&gt; &#39;Abd Allah ibn al-Zubayr</option>
+		<option value="1774">&lt;i&gt;temp.&lt;/i&gt; Mu&#39;awiya II ibn Yazid</option>
+		<option value="1774">&lt;i&gt;temp.&lt;/i&gt; Mu&#39;awiya II ibn Yazid</option>
+		<option value="1774">&lt;i&gt;temp.&lt;/i&gt; Mu&#39;awiya II ibn Yazid</option>
+		<option value="1775">Marwan I ibn Hakam</option>
+		<option value="1776">&lt;i&gt;temp.&lt;/i&gt; Marwan I ibn Hakam</option>
+		<option value="1776">&lt;i&gt;temp.&lt;/i&gt; Marwan I ibn Hakam</option>
+		<option value="1776">&lt;i&gt;temp.&lt;/i&gt; Marwan I ibn Hakam</option>
+		<option value="1777">&lt;i&gt;temp.&lt;/i&gt; &#39;Abd al-Malik ibn Marwan</option>
+		<option value="1777">&lt;i&gt;temp.&lt;/i&gt; &#39;Abd al-Malik ibn Marwan</option>
+		<option value="1777">&lt;i&gt;temp.&lt;/i&gt; &#39;Abd al-Malik ibn Marwan</option>
+		<option value="1777">&lt;i&gt;temp.&lt;/i&gt; &#39;Abd al-Malik ibn Marwan</option>
+		<option value="1777">&lt;i&gt;temp.&lt;/i&gt; &#39;Abd al-Malik ibn Marwan</option>
+		<option value="1777">&lt;i&gt;temp.&lt;/i&gt; &#39;Abd al-Malik ibn Marwan</option>
+		<option value="1777">&lt;i&gt;temp.&lt;/i&gt; &#39;Abd al-Malik ibn Marwan</option>
+		<option value="1777">&lt;i&gt;temp.&lt;/i&gt; &#39;Abd al-Malik ibn Marwan</option>
+		<option value="1778">al-Qatari ibn al-Fuja&#39;a</option>
+		<option value="1778">al-Qatari ibn al-Fuja&#39;a</option>
+		<option value="1779">&#39;Atiya ibn al-Aswad</option>
+		<option value="1779">&#39;Atiya ibn al-Aswad</option>
+		<option value="1780">Anonymous issue</option>
+		<option value="1780">Anonymous issue</option>
+		<option value="1781">Ibn al-Ash&#39;ath</option>
+		<option value="1781">Ibn al-Ash&#39;ath</option>
+		<option value="1782">Uncertain period (pre-reform)</option>
+		<option value="1782">Uncertain period (pre-reform)</option>
+		<option value="1782">Uncertain period (pre-reform)</option>
+		<option selected="selected" value="1783">al-Walid I ibn &#39;Abd al-Malik</option>
+		<option value="1783">al-Walid I ibn &#39;Abd al-Malik</option>
+		<option value="1783">al-Walid I ibn &#39;Abd al-Malik</option>
+		<option value="1783">al-Walid I ibn &#39;Abd al-Malik</option>
+		<option value="1784">&lt;i&gt;temp.&lt;/i&gt; al-Walid I ibn &#39;Abd al-Malik</option>
+		<option value="1784">&lt;i&gt;temp.&lt;/i&gt; al-Walid I ibn &#39;Abd al-Malik</option>
+		<option value="1784">&lt;i&gt;temp.&lt;/i&gt; al-Walid I ibn &#39;Abd al-Malik</option>
+		<option value="1784">&lt;i&gt;temp.&lt;/i&gt; al-Walid I ibn &#39;Abd al-Malik</option>
+		<option value="1784">&lt;i&gt;temp.&lt;/i&gt; al-Walid I ibn &#39;Abd al-Malik</option>
+		<option value="1785">&lt;i&gt;temp.&lt;/i&gt; Suleiman ibn &#39;Abd al-Malik</option>
+		<option value="1785">&lt;i&gt;temp.&lt;/i&gt; Suleiman ibn &#39;Abd al-Malik</option>
+		<option value="1785">&lt;i&gt;temp.&lt;/i&gt; Suleiman ibn &#39;Abd al-Malik</option>
+		<option value="1785">&lt;i&gt;temp.&lt;/i&gt; Suleiman ibn &#39;Abd al-Malik</option>
+		<option value="1785">&lt;i&gt;temp.&lt;/i&gt; Suleiman ibn &#39;Abd al-Malik</option>
+		<option value="1786">&lt;i&gt;temp.&lt;/i&gt; &#39;Umar ibn Abd al-Aziz</option>
+		<option value="1786">&lt;i&gt;temp.&lt;/i&gt; &#39;Umar ibn Abd al-Aziz</option>
+		<option value="1786">&lt;i&gt;temp.&lt;/i&gt; &#39;Umar ibn Abd al-Aziz</option>
+		<option value="1786">&lt;i&gt;temp.&lt;/i&gt; &#39;Umar ibn Abd al-Aziz</option>
+		<option value="1787">&lt;i&gt;temp.&lt;/i&gt; Yazid II ibn &#39;Abd al-Malik</option>
+		<option value="1787">&lt;i&gt;temp.&lt;/i&gt; Yazid II ibn &#39;Abd al-Malik</option>
+		<option value="1787">&lt;i&gt;temp.&lt;/i&gt; Yazid II ibn &#39;Abd al-Malik</option>
+		<option value="1787">&lt;i&gt;temp.&lt;/i&gt; Yazid II ibn &#39;Abd al-Malik</option>
+		<option value="6684">&lt;i&gt;temp.&lt;/i&gt; Yazid II ibn &#39;Abd al-Malik or Hisham ibn &#39;Abd al-Malik</option>
+		<option value="1788">Temp. Hisham ibn &#39;Abd al-Malik</option>
+		<option value="1788">Temp. Hisham ibn &#39;Abd al-Malik</option>
+		<option value="1788">Temp. Hisham ibn &#39;Abd al-Malik</option>
+		<option value="1788">Temp. Hisham ibn &#39;Abd al-Malik</option>
+		<option value="1789">&lt;i&gt;temp.&lt;/i&gt; al-Walid II ibn Yazid</option>
+		<option value="1789">&lt;i&gt;temp.&lt;/i&gt; al-Walid II ibn Yazid</option>
+		<option value="1789">&lt;i&gt;temp.&lt;/i&gt; al-Walid II ibn Yazid</option>
+		<option value="1789">&lt;i&gt;temp.&lt;/i&gt; al-Walid II ibn Yazid</option>
+		<option value="1790">&lt;i&gt;temp.&lt;/i&gt; Yazid III ibn al-Walid</option>
+		<option value="1790">&lt;i&gt;temp.&lt;/i&gt; Yazid III ibn al-Walid</option>
+		<option value="1790">&lt;i&gt;temp.&lt;/i&gt; Yazid III ibn al-Walid</option>
+		<option value="1790">&lt;i&gt;temp.&lt;/i&gt; Yazid III ibn al-Walid</option>
+		<option value="1791">&lt;i&gt;temp.&lt;/i&gt; Ibrahim ibn al-Walid</option>
+		<option value="1791">&lt;i&gt;temp.&lt;/i&gt; Ibrahim ibn al-Walid</option>
+		<option value="1791">&lt;i&gt;temp.&lt;/i&gt; Ibrahim ibn al-Walid</option>
+		<option value="1791">&lt;i&gt;temp.&lt;/i&gt; Ibrahim ibn al-Walid</option>
+		<option value="1792">&lt;i&gt;temp.&lt;/i&gt; Marwan II ibn Muhammad</option>
+		<option value="1792">&lt;i&gt;temp.&lt;/i&gt; Marwan II ibn Muhammad</option>
+		<option value="1792">&lt;i&gt;temp.&lt;/i&gt; Marwan II ibn Muhammad</option>
+		<option value="1792">&lt;i&gt;temp.&lt;/i&gt; Marwan II ibn Muhammad</option>
+		<option value="1793">Uncertain period (post-reform)</option>
+		<option value="1793">Uncertain period (post-reform)</option>
+		<option value="1793">Uncertain period (post-reform)</option>
+		<option value="1793">Uncertain period (post-reform)</option>
+
+	</select>
+                            </div>
+                            <div class="checkbox col-md-2 col-sm-2 col-xs-12">
+                                <label>
+                                    <div class="icheckbox_flat-green" style="position: relative;">
+                                        <input name="ctl00$cbQuestionRuler" type="checkbox" id="cbQuestionRuler" class="flat" style="position: absolute; opacity: 0;" />
+                                        <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins>
+                                    </div>
+                                    (?)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Date:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input name="ctl00$txtDate" type="text" value="AH 86-96 / AD 705-715 (non-Africa or Spain - AV &amp; Æ)" id="txtDate" class="form-control" placeholder="Date" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Denomination:</label>
+                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                <select name="ctl00$ddlDenomination" id="ddlDenomination" class="select2_single form-control">
+		<option value="1">AE</option>
+		<option value="2">Aes Grave</option>
+		<option value="3">Aes Rude</option>
+		<option value="4">Antoninianus</option>
+		<option value="5">Argenteus</option>
+		<option value="6">As</option>
+		<option value="7">Assarion</option>
+		<option value="8">Aureus</option>
+		<option value="9">Chalkous</option>
+		<option value="10">Cistophorus</option>
+		<option value="11">Daric</option>
+		<option value="12">Dekadrachm</option>
+		<option value="13">Denarius</option>
+		<option value="14">Diassarion</option>
+		<option value="15">Dichalkon</option>
+		<option value="16">Didrachm</option>
+		<option value="17">Dilitron</option>
+		<option value="18">Diobol</option>
+		<option value="19">Dishekel</option>
+		<option value="20">Distater</option>
+		<option value="21">Double Sestertius</option>
+		<option value="22">Double Siglos</option>
+		<option value="23">Drachm</option>
+		<option value="24">Ducat</option>
+		<option value="25">Dupondius</option>
+		<option value="26">Follis</option>
+		<option value="27">Half Shekel</option>
+		<option value="28">Half Stater</option>
+		<option value="29">Heavy Miliarense</option>
+		<option value="30">Hekte</option>
+		<option value="31">Hemiassarion</option>
+		<option value="32">Hemidrachm</option>
+		<option value="33">Hemihekte – 1/12 Stater</option>
+		<option value="34">Hemilitron</option>
+		<option value="35">Hemiobol</option>
+		<option value="36">Hexas</option>
+		<option value="37">Large Bronze</option>
+		<option value="38">Light Miliarense</option>
+		<option value="39">Litra</option>
+		<option value="40">Medal</option>
+		<option value="41">Medallion</option>
+		<option value="42">Middle Bronze</option>
+		<option value="43">Nomos</option>
+		<option value="44">Obol</option>
+		<option value="45">Octobol</option>
+		<option value="46">Octodrachm</option>
+		<option value="47">Oktadrachm</option>
+		<option value="48">Oktassarion</option>
+		<option value="49">Penny</option>
+		<option value="50">Pentadrachm</option>
+		<option value="51">Pentassarion</option>
+		<option value="52">Quadrans</option>
+		<option value="53">Quarter Stater</option>
+		<option value="54">Quinarius</option>
+		<option value="55">Semis</option>
+		<option value="56">Semissis</option>
+		<option value="57">Semuncia</option>
+		<option value="58">Sestertius</option>
+		<option value="59">Sextans</option>
+		<option value="60">Shekel</option>
+		<option value="61">Siglos</option>
+		<option value="62">Siliqua</option>
+		<option value="63">Small Bronze</option>
+		<option value="64">Solidus</option>
+		<option value="65">Stater</option>
+		<option value="66">Tetrachalkon</option>
+		<option value="67">Tetradrachm</option>
+		<option value="68">Tetras</option>
+		<option value="69">Tetrassarion</option>
+		<option value="70">Tetrobol</option>
+		<option value="71">Trachy Nomisma</option>
+		<option value="72">Tremissis</option>
+		<option value="73">Triassarion</option>
+		<option value="74">Trichalkon</option>
+		<option value="75">Tridrachm</option>
+		<option value="76">Triens</option>
+		<option value="77">Trihemidrachm</option>
+		<option value="78">Trihemiobol</option>
+		<option value="79">Trihemistater</option>
+		<option value="80">Tritartemorion</option>
+		<option value="81">1/12 Stater</option>
+		<option value="82">Uncia</option>
+		<option value="83">None</option>
+		<option value="84">Maiorina</option>
+		<option value="85">Double Maiorina</option>
+		<option value="86">Nummus</option>
+		<option value="87">Centenionalis</option>
+		<option value="88">Double Centenionalis</option>
+		<option value="89">1/3 Stater</option>
+		<option value="90">1/4 Stater</option>
+		<option value="91">1/8 Stater</option>
+		<option value="92">Myshemihekte – 1/24 Stater</option>
+		<option value="93">Binio</option>
+		<option value="94">Unit</option>
+		<option value="96">Trite</option>
+		<option value="97">25 Litrai</option>
+		<option value="98">50 Litrai</option>
+		<option value="99">100 Litrai</option>
+		<option value="100">Quadrigatus - Didrachm</option>
+		<option value="101">1/4 Follis</option>
+		<option value="102">Hemitetartemorion</option>
+		<option value="103">Tetartemorion</option>
+		<option value="104">Dinar</option>
+		<option value="105">Aspron Trachy</option>
+		<option value="106">Trachy</option>
+		<option value="107">Didrachm or Nomos</option>
+		<option value="108">1/2 Unit</option>
+		<option value="109">1/4 Unit</option>
+		<option value="110">1/48 Stater</option>
+		<option value="111">1/96 Stater</option>
+		<option value="112">1/192 Stater</option>
+		<option value="113">Double Shekel</option>
+		<option value="114">Octassarion</option>
+		<option value="115">Tram </option>
+		<option value="116">Miliaresion </option>
+		<option value="117">Yirmilik Cedid Mahmudiye </option>
+		<option value="118">60 Litrai or Dekadrachm</option>
+		<option value="119">60 Litrai</option>
+		<option value="120">1/4 Siliqua</option>
+		<option value="121">Triobol</option>
+		<option value="122">Pentobol</option>
+		<option value="123">Scyphate Stater</option>
+		<option value="124">Cast unit</option>
+		<option value="125">Histamenon</option>
+		<option value="126">Hyperpyron</option>
+		<option value="127">Pentanummium</option>
+		<option value="128">Dekanummium</option>
+		<option value="129">3/4 Obol</option>
+		<option value="130">Hexassarion</option>
+		<option value="131">1/5 Tetradrachm</option>
+		<option value="132">Hemilitron or Hexonkion</option>
+		<option value="133">Bronze</option>
+		<option value="134">Half Siglos</option>
+		<option value="135">6 Units</option>
+		<option value="136">12 Units</option>
+		<option value="137">24 Units</option>
+		<option value="138">48 Units</option>
+		<option value="139">10 Assaria</option>
+		<option value="140">1/6 Stater</option>
+		<option value="141">1/4 Shekel</option>
+		<option value="142">1/8 Shekel</option>
+		<option value="143">1/12 Shekel</option>
+		<option value="144">1/16 Shekel</option>
+		<option value="145">1/24 Shekel</option>
+		<option value="146">1/32 Shekel</option>
+		<option value="147">1/64 Shekel</option>
+		<option value="148">Tetarteron</option>
+		<option value="149">1/24 Stater</option>
+		<option value="150">1/32 Stater</option>
+		<option value="151">18 Groszy</option>
+		<option value="152">Grosso</option>
+		<option value="153">Grosh</option>
+		<option value="154">1/10 Tetradrachm</option>
+		<option value="155">1/2 of 3/4 Obol</option>
+		<option value="156">1/24 Stater</option>
+		<option value="157">1/4 Quinar</option>
+		<option value="158">Denier</option>
+		<option value="159">1/10 Stater</option>
+		<option value="160">Fals</option>
+		<option value="161">Grosso</option>
+		<option value="162">Grosh</option>
+		<option value="163">Basilikon</option>
+		<option value="164">1/16 Stater</option>
+		<option value="165">Tornese</option>
+		<option value="166">80 Drachmai or Diobol</option>
+		<option value="167">40 Drachmai or Obol</option>
+		<option value="168">Miliarense</option>
+		<option value="169">1/2 Argenteus</option>
+		<option value="170">Victoriatus</option>
+		<option value="171">Hexagram</option>
+		<option value="173">1/4 Drachm</option>
+		<option value="174">12 Assaria</option>
+		<option value="175">11 Assaria</option>
+		<option value="176">Light weight Solidus of 23 Siliquae</option>
+		<option selected="selected" value="177">Dirham</option>
+		<option value="178">Seal</option>
+		<option value="179">Quadrunx</option>
+		<option value="180">1 1/2 Scripula - Nine Siliquae</option>
+		<option value="181">1/3 Assarion</option>
+		<option value="182">Prutah</option>
+		<option value="183">5 Litrai</option>
+		<option value="184">AE Contorniate</option>
+		<option value="185">Half Tram</option>
+		<option value="186">Stamenon</option>
+		<option value="187">Half Tetarteron</option>
+		<option value="188">Zeri İstanbul – Fındık</option>
+		<option value="189">1/2 Siliqua</option>
+		<option value="190">2/3 Miliaresion</option>
+		<option value="191">Follaro</option>
+		<option value="192">1 Uncia</option>
+		<option value="193">40 Nummi</option>
+		<option value="194">250 Nummi - Half Siliqua</option>
+		<option value="195">Heavy Dinar</option>
+		<option value="196">Cedid Adliye Altını</option>
+		<option value="197">Tessera</option>
+		<option value="198">Weight</option>
+		<option value="199">Weight of 6 Nomismata</option>
+		<option value="200">Hemichalkon</option>
+		<option value="201">Weight of 3 Nomismata</option>
+		<option value="202">Onkia</option>
+		<option value="203">Hexas - Dionkion</option>
+		<option value="204">Commercial weight</option>
+		<option value="205">Weight of 3 Staters</option>
+		<option value="206">Half Quadrans</option>
+		<option value="207">Zecchino</option>
+		<option value="208">Double Tram</option>
+		<option value="209">AR Unit</option>
+		<option value="210">Sultani</option>
+		<option value="211">Weight of 1 Uncia</option>
+		<option value="212">Weight of 2 Unciae or 12 Solidi</option>
+		<option value="213">Hemilitra</option>
+		<option value="215">9 Assaria</option>
+		<option value="216">Bracteate</option>
+		<option value="217">Heavy Aureus</option>
+		<option value="218">Coin Die for a Solidus Reverse</option>
+		<option value="219">Octachalkon</option>
+		<option value="220">Dirhem</option>
+		<option value="221">Morabitino (180 Dinheiros)</option>
+		<option value="222">Half Stavraton</option>
+		<option value="223">Gros grand</option>
+		<option value="224">Teston</option>
+		<option value="225">Light weight Solidus of 22 Siliquae</option>
+		<option value="226">Light weight Solidus of 20 Siliquae</option>
+		<option value="227">Light weight Solidus of 21 Siliquae</option>
+		<option value="228">Rouble</option>
+		<option value="229">Kardez</option>
+		<option value="230">2 Nummi</option>
+		<option value="231">Bulla</option>
+		<option value="232">Testone</option>
+		<option value="233">Coronato</option>
+		<option value="234">5 Francs</option>
+		<option value="235">50 Centimes</option>
+		<option value="236">1 Mark (16 Skilling)</option>
+		<option value="237">1/4 Riksdaler</option>
+		<option value="238">1/8 Riksdaler</option>
+		<option value="239">1 Batzen</option>
+		<option value="240">Sestino</option>
+		<option value="241">Carlino</option>
+		<option value="242">Real</option>
+		<option value="243">Half Grosh</option>
+		<option value="244">Giulio</option>
+		<option value="245">2 Lire</option>
+		<option value="246">Mezzo Testone</option>
+		<option value="247">Fiorino di stella da 12 denari</option>
+		<option value="248">Ak&#231;e</option>
+		<option value="249">Trishekel</option>
+		<option value="250">Mnaeion or Oktadrachm</option>
+		<option value="251">Pogh</option>
+		<option value="252">Counterfeiter&#39;s mold</option>
+		<option value="253">Trias or Tetronkion</option>
+		<option value="254">Fındık or Altin</option>
+		<option value="255">Cistophoric Drachm</option>
+		<option value="256">3 Kreuzer</option>
+		<option value="257">2 1/2 Scudi</option>
+		<option value="258">Scudo</option>
+		<option value="259">Doppelter Vereinstaler</option>
+		<option value="260">5 Pesetas</option>
+		<option value="261">7 Bolognini</option>
+		<option value="262">20 Francs</option>
+		<option value="263">Cob 8 Reales</option>
+		<option value="264">Trihemiassarion</option>
+		<option value="265">Hohlpfennig</option>
+		<option value="266">Half Siliqua</option>
+		<option value="267">50 Denarii</option>
+		<option value="268">1/4 Dinar</option>
+		<option value="269">Oktadrachm or Mnaieion</option>
+		<option value="270">Quarter Stater</option>
+		<option value="271">Hemistater or Drachm</option>
+		<option value="272">Heavy Follis</option>
+		<option value="273">1/36 Stater</option>
+		<option value="274">Gnostic Tessera</option>
+		<option value="275">1/32 Siglos</option>
+		<option value="276">Half Follis</option>
+		<option value="277">1/4 Ducat</option>
+		<option value="278">Taler</option>
+		<option value="279">20 Dollars</option>
+		<option value="280">Trichryson or Pentadrachm</option>
+		<option value="281">16 Litrai or Tetradrachm</option>
+		<option value="282">Radiate Fraction</option>
+		<option value="283">Triple Unit</option>
+		<option value="284">Medallion of four Siliquae</option>
+		<option value="285">Amulet</option>
+		<option value="286">Exagium Solidi</option>
+		<option value="287">Weight of 1 Nomisma</option>
+		<option value="288">Weight of 6 Ounkia</option>
+		<option value="289">Weight of 3 Ounkia</option>
+		<option value="290">Weight of 18 Nomismata</option>
+		<option value="291">Weight of 2 Ounkia</option>
+		<option value="292">Weight of 5 Nomismata</option>
+		<option value="293">Weight of 4 Nomismata</option>
+		<option value="294">Weight of 12 Keratia</option>
+		<option value="295">Weight of 8 Keratia</option>
+		<option value="296">Weight of 10 Dirhams</option>
+		<option value="297">Eighth Unit</option>
+		<option value="298">Quarter Unit</option>
+		<option value="299">Fraction</option>
+		<option value="300">Cast Trias or Tetronkion</option>
+		<option value="301">8 Reales</option>
+		<option value="302">2 Reales</option>
+		<option value="303">120 Grana - Piastra</option>
+		<option value="304">5 Lire</option>
+		<option value="305">Aes Grave Teruncius</option>
+		<option value="306">Cast Onkia</option>
+		<option value="307">Saluto</option>
+		<option value="308">Pegione</option>
+		<option value="309">Ducato</option>
+		<option value="310">Fiorino d’oro</option>
+		<option value="311">Denaro</option>
+		<option value="312">1/2 Mohur</option>
+		<option value="313">Mohur</option>
+		<option value="314">1/4 Mohur</option>
+		<option value="315">Teruncius</option>
+		<option value="316">Quincunx</option>
+		<option value="317">Rolabasso</option>
+		<option value="318">10 Litrai</option>
+		<option value="319">Tar&#236;</option>
+		<option value="320">3 Groszy</option>
+		<option value="321">Dollar</option>
+		<option value="322">Morgan Dollar</option>
+		<option value="323">Oktobol</option>
+		<option value="324">Pentonkion</option>
+		<option value="325">Tetras or Trionkion</option>
+		<option value="326">Ashrafi</option>
+		<option value="327">Half Ashrafi</option>
+		<option value="328">Half Dirham</option>
+		<option value="329">12 Nummi</option>
+		<option value="330">Half Unit</option>
+		<option value="331">Oktachalkon</option>
+		<option value="332">Pfennig</option>
+		<option value="333">6 Kreuzer</option>
+		<option value="334">Weight of 8 Nomismata</option>
+		<option value="335">Weight of 9 Nomismata</option>
+		<option value="336">Weight of 1 Ounkia</option>
+		<option value="337">Weight of 2 Nomismata</option>
+		<option value="338">Weight of 50 Dirhams</option>
+		<option value="339">Fractional Denier</option>
+		<option value="340">Sezin</option>
+		<option value="341">4 Nummi</option>
+		<option value="342">Half Guinea</option>
+		<option value="343">2 Dirhams</option>
+		<option value="344">Weight of 5 Dirhams</option>
+		<option value="345">Scudo d&#39;oro</option>
+		<option value="346">Terzarola</option>
+		<option value="347">2 1/2 Nummi</option>
+		<option value="348">10 Roubles</option>
+		<option value="349">6 Ducati</option>
+		<option value="350">Vierzipfliger Pfennig</option>
+		<option value="351">Runder Pfennig</option>
+		<option value="352">Viereckiger Pfennig</option>
+		<option value="353">Vierzipfliger H&#228;lbling</option>
+		<option value="354">Half Grosz</option>
+		<option value="355">20 Kopeks</option>
+		<option value="356">50 Kopeks</option>
+		<option value="357">3 Grossi</option>
+		<option value="358">4 Grossi</option>
+		<option value="359">Gros</option>
+		<option value="360">Plappart</option>
+		<option value="361">Angster</option>
+		<option value="362">1/4 Siglos</option>
+		<option value="363">Uniface Plaquette</option>
+		<option value="364">Aes Formatum</option>
+		<option value="365">Weight of 1 Stater</option>
+		<option value="366">Double Tournois</option>
+		<option value="367">Maille Blanche Hibernie</option>
+		<option value="368">Obole</option>
+		<option value="369">Pale AV Thrymsa – Shilling</option>
+		<option value="370">Sceatt</option>
+		<option value="371">Schilling</option>
+		<option value="372">Groat</option>
+		<option value="373">Takvorin</option>
+		<option value="374">5 Batzen</option>
+		<option value="375">Assis</option>
+		<option value="376">20 Kreuzer</option>
+		<option value="377">4 Soldi</option>
+		<option value="378">1/4 Batzen</option>
+		<option value="379">Pound</option>
+		<option value="380">Quadruple Unit</option>
+		<option value="381">20 Lire</option>
+		<option value="382">1/4 Assarion</option>
+		<option value="383">Franc &#224; pied</option>
+		<option value="384">20 Nummi – Half Follis</option>
+		<option value="385">40 Nummi – Follis</option>
+		<option value="386">Wuqiya</option>
+		<option value="387">1/3 Stater or Drachm</option>
+		<option value="388">3 Dukaten</option>
+		<option value="389">Doppelter Lammdukat</option>
+		<option value="390">1/4 Taler</option>
+		<option value="391">Cast double unit</option>
+
+	</select>
+                            </div>
+                            <div class="checkbox col-md-2 col-sm-2 col-xs-12">
+                                <label>
+                                    <div class="icheckbox_flat-green" style="position: relative;">
+                                        <input name="ctl00$cbQuestion" type="checkbox" id="cbQuestion" class="flat" style="position: absolute; opacity: 0;" />
+                                        <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins>
+                                    </div>
+                                    (?)
+                                </label>
+                            </div>
+                            <div class="checkbox col-md-2 col-sm-2 col-xs-12">
+                                <label>
+                                    <div class="icheckbox_flat-green" style="position: relative;">
+                                        <input name="ctl00$cbQuotation" type="checkbox" id="cbQuotation" class="flat" style="position: absolute; opacity: 0;" />
+                                        <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins>
+                                    </div>
+                                    (')
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Metal:</label>
+                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                <select name="ctl00$ddlMetal" id="ddlMetal" class="select2_single form-control">
+		<option value="1">Gold</option>
+		<option value="2">Electrum</option>
+		<option value="3">Platinum</option>
+		<option selected="selected" value="4">Silver</option>
+		<option value="5">Billon</option>
+		<option value="6">Bronze</option>
+		<option value="7">Orichalcum</option>
+		<option value="8">Potin</option>
+		<option value="9">Copper</option>
+		<option value="10">Tin</option>
+		<option value="11">Lead</option>
+		<option value="12">Brass</option>
+		<option value="13">Bimetallic</option>
+		<option value="14">None</option>
+		<option value="15">Subaeratus</option>
+		<option value="16">Subferratus</option>
+		<option value="17">Silvered bronze</option>
+		<option value="18">Iron</option>
+		<option value="19">Terracotta</option>
+		<option value="20">Glass</option>
+
+	</select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Diameter:</label>
+                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                <input name="ctl00$txtDiameter" type="text" value="26" id="txtDiameter" class="form-control" placeholder="mm" />
+                            </div>
+                            <label class="control-label col-md-1 col-sm-1 col-xs-12">Weight:</label>
+                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                <input name="ctl00$txtWeight" type="text" value="2.87" id="txtWeight" class="form-control" placeholder="g" />
+                            </div>
+                            <label class="control-label col-md-2 col-sm-2 col-xs-12">Die Axis:</label>
+                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                <select name="ctl00$ddlDie" id="ddlDie" class="select2_single form-control">
+		<option value="N/A">N/A</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option selected="selected" value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+
+	</select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Standard or Type:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input name="ctl00$txtStandard" type="text" id="txtStandard" class="form-control" placeholder="Standard or Type" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Mint / Magistrate:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input name="ctl00$txtMint" type="text" value="Wasit" id="txtMint" class="form-control" placeholder="Mint / Magistrate" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Struck dates:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input name="ctl00$txtStruck" type="text" value="dated AH 93 (AD 710/11)" id="txtStruck" class="form-control" placeholder="Struck dates" />
+                            </div>
+                        </div>
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Obv. legend:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <textarea name="ctl00$txtObvLegend" rows="2" cols="20" id="txtObvLegend" class="form-control resizable_textarea" placeholder="Obverse legend">
+</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Obv. description:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <textarea name="ctl00$txtObvLegendDesc" rows="2" cols="20" id="txtObvLegendDesc" class="form-control resizable_textarea" placeholder="Obverse description">
+</textarea>
+                            </div>
+                        </div>
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Rev. legend:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <textarea name="ctl00$txtRevLegend" rows="2" cols="20" id="txtRevLegend" class="form-control resizable_textarea" placeholder="Reverse legend">
+</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Rev. description:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <textarea name="ctl00$txtRevLegendDesc" rows="2" cols="20" id="txtRevLegendDesc" class="form-control resizable_textarea" placeholder="Reverse description">
+</textarea>
+                            </div>
+                        </div>
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">References:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <textarea name="ctl00$txtReferences" rows="2" cols="20" id="txtReferences" class="form-control resizable_textarea" placeholder="References">
+Album 128</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Comments:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <textarea name="ctl00$txtComments" rows="2" cols="20" id="txtComments" class="form-control resizable_textarea" placeholder="Comments">
+</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Defects:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input name="ctl00$txtToning" type="text" id="txtToning" class="form-control" placeholder="Defects" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Grade:</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select name="ctl00$ddlGrade" id="ddlGrade" class="select2_single form-control">
+		<option value="1">FDC</option>
+		<option value="2">UNC</option>
+		<option value="3">Virtually as struck</option>
+		<option selected="selected" value="4">Good extremely fine</option>
+		<option value="5">Extremely fine</option>
+		<option value="6">Nearly extremely fine</option>
+		<option value="7">About extremely fine</option>
+		<option value="8">Good very fine</option>
+		<option value="16">None</option>
+		<option value="9">Very fine</option>
+		<option value="10">Nearly very fine</option>
+		<option value="11">About very fine</option>
+		<option value="12">Good fine</option>
+		<option value="13">Fine</option>
+		<option value="14">Nearly fine</option>
+		<option value="15">Fair</option>
+
+	</select>
+                            </div>
+                            <div class="checkbox col-md-3 col-sm-3 col-xs-12">
+                                <label>
+                                    <div class="icheckbox_flat-green" style="position: relative;">
+                                        <input name="ctl00$cbOtherwise" type="checkbox" id="cbOtherwise" class="flat" style="position: absolute; opacity: 0;" />
+                                        <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins>
+                                    </div>
+                                    Otherwise
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Pedigree:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <textarea name="ctl00$txtPedigree" rows="2" cols="20" id="txtPedigree" class="form-control resizable_textarea" placeholder="Pedigree">
+</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Notes:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <textarea name="ctl00$txtNotes" rows="2" cols="20" id="txtNotes" class="form-control resizable_textarea" placeholder="Notes">
+</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Check:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <select name="ctl00$ddlCondition" id="ctl00_ddlCondition" class="select2_single form-control">
+		<option selected="selected" value="1">None</option>
+		<option value="2">Finalized</option>
+		<option value="3">Unfinished</option>
+
+	</select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Multiple lots:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <textarea name="ctl00$txtMultipleLots" rows="2" cols="20" id="txtMultipleLots" class="form-control resizable_textarea" placeholder="Multiple Lots">
+</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Header:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input name="ctl00$txtHeader" type="text" id="ctl00_txtHeader" class="form-control" placeholder="Header" />
+                            </div>
+                        </div>
+                        <div class="ln_solid"></div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Plain HTML:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <textarea name="ctl00$txtMirror" rows="2" cols="20" id="txtMirror" class="form-control-special" placeholder="Finalized HTML">
+&lt;b&gt;ISLAMIC, Umayyad Caliphate. &lt;i&gt;al-Walid I ibn &#39;Abd al-Malik&lt;/i&gt;, AH 86-96 / AD 705-715.&lt;/b&gt; Dirham (Silver, 26 mm, 2.87 g, 7 h), Wasit, dated AH 93 (AD 710/11).  Album 128. Good extremely fine.</textarea>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <span id="lblPosition">Start position: None</span>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <label class="label-warning">Do not select HTML Tags for mirroring.</label>
+                                    <button id="btnMirror" class="btn btn-success btn-xs pull-right" type="button">Mirror selection</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Existing selections:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <table id="tMirror" class="table jambo_table table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th>Text</th>
+                                            <th>Start</th>
+                                            <th>End</th>
+                                            <th>Remove</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Collection:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <select name="ctl00$ddlCollection" id="ddlCollection" class="select2_single form-control">
+		<option selected="selected" value="0">n/a</option>
+		<option value="1">The G.G. Collection</option>
+		<option value="2">The Saitta Collection</option>
+
+	</select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-xs-12">
+                <!-- Right column panels -->
+                <div class="x_panel" id="pNavigation">
+                    <div class="x_title">
+                        <h2>Inventory <small>
+                            #81 of 81</small></h2>
+                        <ul class="nav navbar-right panel_toolbox" id="aNavigationCollapse">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content" id="x_c_navigation">
+                        <label class="control-label">Inventory Number</label>
+                        <div>
+                            <input name="ctl00$txtInventoryID" type="text" value="19479" id="txtInventoryID" class="form-control" placeholder="Inventory number" />
+                        </div>
+                        <label class="control-label">Navigation</label>
+                        <div class="form-group">
+                            <div class="fa-hover col-md-1 col-sm-1 col-xs-12">
+                                <a id="ctl00_lbBack" class="fa fa-step-backward fa-3x" href="javascript:__doPostBack(&#39;ctl00$lbBack&#39;,&#39;&#39;)"></a>
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-12">
+                                <div id="iInventories"></div>
+                            </div>
+                            <div class="fa-hover col-md-1 col-sm-1 col-xs-12">
+                                <a id="ctl00_lbForward" class="fa fa-step-forward fa-3x" href="javascript:__doPostBack(&#39;ctl00$lbForward&#39;,&#39;&#39;)"></a>
+                            </div>
+                        </div>
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="submit" name="ctl00$btnSetInventory" value="Save" id="btnSetInventory" class="btn btn-success pull-right" />
+                                <input type="submit" name="ctl00$btnCancel" value="Cancel" id="ctl00_btnCancel" class="btn btn-primary pull-right" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="x_panel" id="pFinalized">
+                    <div class="x_title">
+                        <h2>Finalized <small><span id="sPercentage"></span></small></h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content" id="x_c_finalized">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-md-1 col-xs-1 text-right">
+                                <i id="ctl00_iLeftArrow" class="glyphicon glyphicon-menu-left" style="font-size: 2.5em; margin-top: 9vh; cursor: pointer;"></i>
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10" id="divPreview">
+                                <a href="/source/images/inventory/web/19479g00.jpg?=85016539" id="aPreview" data-fancybox="images" data-caption="Preview">
+                                    <img id="iPreview" class="img-responsive" src="/source/images/inventory/web/19479g00.jpg?=85016539" />
+                                </a>
+                                <a href="javascript:;" id="a1" data-fancybox="images" data-caption="Preview">
+                                    <img id="iWebImage" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="col-md-1 col-xs-1">
+                                <i id="ctl00_iRightArrow" class="glyphicon glyphicon-menu-right" style="font-size: 2.5em; margin-top: 9vh; cursor: pointer;"></i>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-12 col-sm-12 col-xs-12" style="display: flex; flex-direction: column;">
+                                    <div id="divFinalized" style="margin-top: 10px; text-align: justify; text-justify: auto; padding-right: 10px;"><b>ISLAMIC, Umayyad Caliphate. <i>al-Walid I ibn 'Abd al-Malik</i>, AH 86-96 / AD 705-715.</b> Dirham (Silver, 26 mm, 2.87 g, 7 h), Wasit, dated AH 93 (AD 710/11).  Album 128. Good extremely fine.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="divInputToolbar" class="div-toolbar row">
+            <div id="divGreek" class="btn-toolbar col-md-12 col-sm-12 col-xs-12" role="toolbar">
+                <div class="btn-group btn-group-xs">
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#913;',$('#divInputToolbar').prev().attr('id'))">&#913;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#914;',$('#divInputToolbar').prev().attr('id'))">&#914;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#915;',$('#divInputToolbar').prev().attr('id'))">&#915;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#916;',$('#divInputToolbar').prev().attr('id'))">&#916;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#917;',$('#divInputToolbar').prev().attr('id'))">&#917;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#918;',$('#divInputToolbar').prev().attr('id'))">&#918;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#919;',$('#divInputToolbar').prev().attr('id'))">&#919;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#920;',$('#divInputToolbar').prev().attr('id'))">&#920;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#921;',$('#divInputToolbar').prev().attr('id'))">&#921;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#922;',$('#divInputToolbar').prev().attr('id'))">&#922;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#923;',$('#divInputToolbar').prev().attr('id'))">&#923;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#924;',$('#divInputToolbar').prev().attr('id'))">&#924;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#925;',$('#divInputToolbar').prev().attr('id'))">&#925;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#926;',$('#divInputToolbar').prev().attr('id'))">&#926;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#1048;',$('#divInputToolbar').prev().attr('id'))">&#1048;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#927;',$('#divInputToolbar').prev().attr('id'))">&#927;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#928;',$('#divInputToolbar').prev().attr('id'))">&#928;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#929;',$('#divInputToolbar').prev().attr('id'))">&#929;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#931;',$('#divInputToolbar').prev().attr('id'))">&#931;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#932;',$('#divInputToolbar').prev().attr('id'))">&#932;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#933;',$('#divInputToolbar').prev().attr('id'))">&#933;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#934;',$('#divInputToolbar').prev().attr('id'))">&#934;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#935;',$('#divInputToolbar').prev().attr('id'))">&#935;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#936;',$('#divInputToolbar').prev().attr('id'))">&#936;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#937;',$('#divInputToolbar').prev().attr('id'))">&#937;</div>
+
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#984;',$('#divInputToolbar').prev().attr('id'))">&#984;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#1063;',$('#divInputToolbar').prev().attr('id'))">&#1063;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#1210;',$('#divInputToolbar').prev().attr('id'))">&#1210;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#2794;',$('#divInputToolbar').prev().attr('id'))">&#2794;</div>
+
+                </div>
+                <div class="clearfix"></div>
+                <div class="btn-group btn-group-xs">
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#945;',$('#divInputToolbar').prev().attr('id'))">&#945;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#946;',$('#divInputToolbar').prev().attr('id'))">&#946;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#947;',$('#divInputToolbar').prev().attr('id'))">&#947;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#948;',$('#divInputToolbar').prev().attr('id'))">&#948;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#1028;',$('#divInputToolbar').prev().attr('id'))">&#1028;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#950;',$('#divInputToolbar').prev().attr('id'))">&#950;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#951;',$('#divInputToolbar').prev().attr('id'))">&#951;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#952;',$('#divInputToolbar').prev().attr('id'))">&#952;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#953;',$('#divInputToolbar').prev().attr('id'))">&#953;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#954;',$('#divInputToolbar').prev().attr('id'))">&#954;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#955;',$('#divInputToolbar').prev().attr('id'))">&#955;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#956;',$('#divInputToolbar').prev().attr('id'))">&#956;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#957;',$('#divInputToolbar').prev().attr('id'))">&#957;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#958;',$('#divInputToolbar').prev().attr('id'))">&#958;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#959;',$('#divInputToolbar').prev().attr('id'))">&#959;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#960;',$('#divInputToolbar').prev().attr('id'))">&#960;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#961;',$('#divInputToolbar').prev().attr('id'))">&#961;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#962;',$('#divInputToolbar').prev().attr('id'))">&#962;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#963;',$('#divInputToolbar').prev().attr('id'))">&#963;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#964;',$('#divInputToolbar').prev().attr('id'))">&#964;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#965;',$('#divInputToolbar').prev().attr('id'))">&#965;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#966;',$('#divInputToolbar').prev().attr('id'))">&#966;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#967;',$('#divInputToolbar').prev().attr('id'))">&#967;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&psi;',$('#divInputToolbar').prev().attr('id'))">&psi;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&omega;',$('#divInputToolbar').prev().attr('id'))">&omega;</div>
+
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#10033;',$('#divInputToolbar').prev().attr('id'))">&#10033;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&dagger;',$('#divInputToolbar').prev().attr('id'))">&dagger;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&bull;',$('#divInputToolbar').prev().attr('id'))">&bull;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#990;',$('#divInputToolbar').prev().attr('id'))">&#990;</div>
+
+                </div>
+            </div>
+            <div id="divLycian" class="btn-toolbar col-md-12 col-sm-12 col-xs-12" role="toolbar">
+                <div class="btn-group btn-group-xs">
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66176;',$('#divInputToolbar').prev().attr('id'))">&#66176;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66177;',$('#divInputToolbar').prev().attr('id'))">&#66177;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66178;',$('#divInputToolbar').prev().attr('id'))">&#66178;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66179;',$('#divInputToolbar').prev().attr('id'))">&#66179;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66180;',$('#divInputToolbar').prev().attr('id'))">&#66180;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66181;',$('#divInputToolbar').prev().attr('id'))">&#66181;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66182;',$('#divInputToolbar').prev().attr('id'))">&#66182;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66183;',$('#divInputToolbar').prev().attr('id'))">&#66183;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66184;',$('#divInputToolbar').prev().attr('id'))">&#66184;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66185;',$('#divInputToolbar').prev().attr('id'))">&#66185;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66186;',$('#divInputToolbar').prev().attr('id'))">&#66186;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66187;',$('#divInputToolbar').prev().attr('id'))">&#66187;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66188;',$('#divInputToolbar').prev().attr('id'))">&#66188;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66189;',$('#divInputToolbar').prev().attr('id'))">&#66189;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66190;',$('#divInputToolbar').prev().attr('id'))">&#66190;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66191;',$('#divInputToolbar').prev().attr('id'))">&#66191;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66192;',$('#divInputToolbar').prev().attr('id'))">&#66192;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66193;',$('#divInputToolbar').prev().attr('id'))">&#66193;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66194;',$('#divInputToolbar').prev().attr('id'))">&#66194;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66195;',$('#divInputToolbar').prev().attr('id'))">&#66195;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66196;',$('#divInputToolbar').prev().attr('id'))">&#66196;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66197;',$('#divInputToolbar').prev().attr('id'))">&#66197;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66198;',$('#divInputToolbar').prev().attr('id'))">&#66198;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66199;',$('#divInputToolbar').prev().attr('id'))">&#66199;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66200;',$('#divInputToolbar').prev().attr('id'))">&#66200;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66201;',$('#divInputToolbar').prev().attr('id'))">&#66201;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66202;',$('#divInputToolbar').prev().attr('id'))">&#66202;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66203;',$('#divInputToolbar').prev().attr('id'))">&#66203;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#66204;',$('#divInputToolbar').prev().attr('id'))">&#66204;</div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="btn-group btn-group-xs">
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('A',$('#divInputToolbar').prev().attr('id'))">A</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('E',$('#divInputToolbar').prev().attr('id'))">E</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('B',$('#divInputToolbar').prev().attr('id'))">B</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('Bh',$('#divInputToolbar').prev().attr('id'))">Bh</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('G',$('#divInputToolbar').prev().attr('id'))">G</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('D',$('#divInputToolbar').prev().attr('id'))">D</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('I',$('#divInputToolbar').prev().attr('id'))">I</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('W',$('#divInputToolbar').prev().attr('id'))">W</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('Z',$('#divInputToolbar').prev().attr('id'))">Z</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('Th',$('#divInputToolbar').prev().attr('id'))">Th</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('J',$('#divInputToolbar').prev().attr('id'))">J</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('K',$('#divInputToolbar').prev().attr('id'))">K</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('Q',$('#divInputToolbar').prev().attr('id'))">Q</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('L',$('#divInputToolbar').prev().attr('id'))">L</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('M;',$('#divInputToolbar').prev().attr('id'))">M</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('N',$('#divInputToolbar').prev().attr('id'))">N</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('Mm',$('#divInputToolbar').prev().attr('id'))">Mm</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('Nn',$('#divInputToolbar').prev().attr('id'))">Nn</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('U',$('#divInputToolbar').prev().attr('id'))">U</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('P',$('#divInputToolbar').prev().attr('id'))">P</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('Kk',$('#divInputToolbar').prev().attr('id'))">Kk</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('R',$('#divInputToolbar').prev().attr('id'))">R</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('S',$('#divInputToolbar').prev().attr('id'))">S</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('T',$('#divInputToolbar').prev().attr('id'))">T</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('Tt',$('#divInputToolbar').prev().attr('id'))">Tt</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('An',$('#divInputToolbar').prev().attr('id'))">An</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('En',$('#divInputToolbar').prev().attr('id'))">En</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('H',$('#divInputToolbar').prev().attr('id'))">H</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('X',$('#divInputToolbar').prev().attr('id'))">X</div>
+                </div>
+            </div>
+            <div id="divAramaic" class="btn-toolbar col-md-12 col-sm-12 col-xs-12" role="toolbar">
+                <div class="btn-group btn-group-xs">
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67648;',$('#divInputToolbar').prev().attr('id'))">&#67648;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67649;',$('#divInputToolbar').prev().attr('id'))">&#67649;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67650;',$('#divInputToolbar').prev().attr('id'))">&#67650;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67651;',$('#divInputToolbar').prev().attr('id'))">&#67651;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67652;',$('#divInputToolbar').prev().attr('id'))">&#67652;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67653;',$('#divInputToolbar').prev().attr('id'))">&#67653;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67654;',$('#divInputToolbar').prev().attr('id'))">&#67654;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67655;',$('#divInputToolbar').prev().attr('id'))">&#67655;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67656;',$('#divInputToolbar').prev().attr('id'))">&#67656;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67657;',$('#divInputToolbar').prev().attr('id'))">&#67657;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67658;',$('#divInputToolbar').prev().attr('id'))">&#67658;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67659;',$('#divInputToolbar').prev().attr('id'))">&#67659;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67660;',$('#divInputToolbar').prev().attr('id'))">&#67660;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67661;',$('#divInputToolbar').prev().attr('id'))">&#67661;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67662;',$('#divInputToolbar').prev().attr('id'))">&#67662;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67663;',$('#divInputToolbar').prev().attr('id'))">&#67663;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67664;',$('#divInputToolbar').prev().attr('id'))">&#67664;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67665;',$('#divInputToolbar').prev().attr('id'))">&#67665;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67666;',$('#divInputToolbar').prev().attr('id'))">&#67666;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67667;',$('#divInputToolbar').prev().attr('id'))">&#67667;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67668;',$('#divInputToolbar').prev().attr('id'))">&#67668;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67669;',$('#divInputToolbar').prev().attr('id'))">&#67669;</div>
+                </div>
+            </div>
+            <div id="divPunic" class="btn-toolbar col-md-12 col-sm-12 col-xs-12" role="toolbar">
+                <div class="btn-group btn-group-xs">
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67840;',$('#divInputToolbar').prev().attr('id'))">&#67840;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67841;',$('#divInputToolbar').prev().attr('id'))">&#67841;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67842;',$('#divInputToolbar').prev().attr('id'))">&#67842;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67843;',$('#divInputToolbar').prev().attr('id'))">&#67843;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67844;',$('#divInputToolbar').prev().attr('id'))">&#67844;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67845;',$('#divInputToolbar').prev().attr('id'))">&#67845;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67846;',$('#divInputToolbar').prev().attr('id'))">&#67846;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67847;',$('#divInputToolbar').prev().attr('id'))">&#67847;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67848;',$('#divInputToolbar').prev().attr('id'))">&#67848;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67849;',$('#divInputToolbar').prev().attr('id'))">&#67849;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67850;',$('#divInputToolbar').prev().attr('id'))">&#67850;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67851;',$('#divInputToolbar').prev().attr('id'))">&#67851;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67852;',$('#divInputToolbar').prev().attr('id'))">&#67852;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67853;',$('#divInputToolbar').prev().attr('id'))">&#67853;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67854;',$('#divInputToolbar').prev().attr('id'))">&#67854;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67855;',$('#divInputToolbar').prev().attr('id'))">&#67855;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67856;',$('#divInputToolbar').prev().attr('id'))">&#67856;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67857;',$('#divInputToolbar').prev().attr('id'))">&#67857;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67858;',$('#divInputToolbar').prev().attr('id'))">&#67858;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67859;',$('#divInputToolbar').prev().attr('id'))">&#67859;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67860;',$('#divInputToolbar').prev().attr('id'))">&#67860;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#67861;',$('#divInputToolbar').prev().attr('id'))">&#67861;</div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="btn-group btn-group-xs">
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#39;',$('#divInputToolbar').prev().attr('id'))">&#39;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#98;',$('#divInputToolbar').prev().attr('id'))">&#98;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#103;',$('#divInputToolbar').prev().attr('id'))">&#103;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#100;',$('#divInputToolbar').prev().attr('id'))">&#100;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#104;',$('#divInputToolbar').prev().attr('id'))">&#104;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#119;',$('#divInputToolbar').prev().attr('id'))">&#119;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#122;',$('#divInputToolbar').prev().attr('id'))">&#122;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#7717;',$('#divInputToolbar').prev().attr('id'))">&#7717;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#7789;',$('#divInputToolbar').prev().attr('id'))">&#7789;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#121;',$('#divInputToolbar').prev().attr('id'))">&#121;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#107;',$('#divInputToolbar').prev().attr('id'))">&#107;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#108;',$('#divInputToolbar').prev().attr('id'))">&#108;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#109;',$('#divInputToolbar').prev().attr('id'))">&#109;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#110;',$('#divInputToolbar').prev().attr('id'))">&#110;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#115;',$('#divInputToolbar').prev().attr('id'))">&#115;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#39;',$('#divInputToolbar').prev().attr('id'))">&#39;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#112;',$('#divInputToolbar').prev().attr('id'))">&#112;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#7779;',$('#divInputToolbar').prev().attr('id'))">&#7779;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#113;',$('#divInputToolbar').prev().attr('id'))">&#113;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#114;',$('#divInputToolbar').prev().attr('id'))">&#114;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#353;',$('#divInputToolbar').prev().attr('id'))">&#353;</div>
+                    <div class="btn btn-info btn-char" onclick="InsertCharacter('&#116;',$('#divInputToolbar').prev().attr('id'))">&#116;</div>
+                </div>
+
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 row">
+                <div class="btn-toolbar pull-right" role="toolbar">
+                    <div class="btn-group btn-group-xs">
+                        <div id="btnGreek" class="btn btn-default btn-xs" aria-label="Greek">
+                            Greek
+                           
+                        </div>
+                        <div id="btnLycian" class="btn btn-default btn-xs" aria-label="Lycian">
+                            Lycian
+                           
+                        </div>
+                        <div id="btnAramaic" class="btn btn-default btn-xs" aria-label="Aramaic">
+                            Aramaic
+                        </div>
+                        <div id="btnPunic" class="btn btn-default btn-xs" aria-label="Punic">
+                            Punic
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" name="ctl00$hfInventoryID" id="hfInventoryID" value="19479" />
+        <input type="hidden" name="ctl00$hfCount" id="hfCount" value="81" />
+        <input type="hidden" name="ctl00$hfMinInventory" id="hfMinInventory" value="19479" />
+        <input type="hidden" name="ctl00$hfMaxInventory" id="hfMaxInventory" value="21153" />
+        <input type="hidden" name="ctl00$hfInventoryNumberArray" id="hfInventoryNumberArray" value="19479,19480,19481,19482,19483,19484,19485,19486,19487,19488,19489,19490,19491,19492,19493,19494,19495,19496,19497,19498,19499,19500,19501,19502,21095,21096,21097,21098,21099,21100,21101,21102,21103,21105,21106,21107,21108,21109,21110,21111,21112,21113,21114,21115,21116,21117,21118,21119,21120,21121,21122,21123,21124,21125,21126,21127,21128,21129,21130,21131,21132,21133,21134,21135,21137,21138,21139,21140,21141,21142,21143,21144,21145,21146,21147,21148,21149,21150,21151,21152,21153" />
+        <input type="hidden" name="ctl00$hfCollapsedPanel" id="hfCollapsedPanel" />
+        <input type="hidden" name="ctl00$hfFinalizedNotes" id="hfFinalizedNotes" />
+        <input type="hidden" name="ctl00$hfFinalized" id="hfFinalized" value="&lt;b>ISLAMIC, Umayyad Caliphate. &lt;i>al-Walid I ibn &#39;Abd al-Malik&lt;/i>, AH 86-96 / AD 705-715.&lt;/b> Dirham (Silver, 26 mm, 2.87 g, 7 h), Wasit, dated AH 93 (AD 710/11).  Album 128. Good extremely fine." />
+        <input type="hidden" name="ctl00$hfDates" id="hfDates" value="[{&quot;value&quot;:&quot;AH 86-96 / AD 705-715 (non-Africa or Spain - AV \u0026 Æ)&quot;,&quot;data&quot;:&quot;Alram&quot;},{&quot;value&quot;:&quot;AH 86-96 / AD 705-715 (non-Africa or Spain - AR)&quot;,&quot;data&quot;:&quot;Klat. Alram&quot;},{&quot;value&quot;:&quot;AH 86-96 / AD 705-715 (Africa \u0026 Spain - AV \u0026 Æ)&quot;,&quot;data&quot;:&quot;Gomez, \u003ci\u003eHispano\u003c/i\u003e. Album&quot;},{&quot;value&quot;:&quot;AH 86-96 / AD 705-715 (Africa \u0026 Spain - AR)&quot;,&quot;data&quot;:&quot;Gomez, \u003ci\u003eHispano\u003c/i\u003e. Klat. Album&quot;}]" />
+        <input type="hidden" name="ctl00$hfRefernces" id="hfRefernces" />
+        <input type="hidden" name="ctl00$hfExternals" id="hfExternals" />
+        <input type="hidden" name="ctl00$hfVenues" id="hfVenues" />
+        <input type="hidden" name="ctl00$hfInitialVenues" id="hfInitialVenues" value="9" />
+        <input type="hidden" name="ctl00$hfVenueError" id="hfVenueError" />
+        <input type="submit" name="ctl00$btnSliderFinish" value="Button" id="btnSliderFinish" class="hidden" />
+        <input type="submit" name="ctl00$btnSaveInventory" value="Button" id="btnSaveInventory" class="hidden" />
+    
+</div>
+<style>
+    .div-toolbar {
+        background-color: #e3f7fc;
+        display: none;
+        box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.3);
+        margin-left: 0.1em;
+        margin-right: 0.1em;
+    }
+
+        .div-toolbar.active {
+            display: block;
+        }
+
+    .btn-char {
+        margin: 0.05em !important;
+        min-width: 1.4em;
+        padding: 8px 2px !important;
+        line-height: 0.1 !important;
+    }
+
+    .form-control-special {
+        display: block;
+        width: 100%;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        min-height: 54px;
+        height: auto;
+    }
+
+        .form-control-special:focus {
+            border-color: #66afe9;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+        }
+</style>
+
+                    <input type="hidden" name="hfUser" id="hfUser" value="GSs4TBYENCJsdFzhoO5hsg==" />
+                    <input type="hidden" name="hfPusherKey" id="hfPusherKey" value="6fd44c12f55bf33ed9ff" />
+                
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+            </div>
+            <!-- /page content -->
+
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    Copyright © 2017 - Leu Numismatik AG
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+    <div class="modal-backdrop fade in" style="display: none" id="loading-indicator">
+        <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw" style="position: absolute; top: 50%; left: 50%;"></i>
+    </div>
+    <!-- Custom Theme Scripts -->
+    <script src="../backoffice/js/custom.min.js"></script>
+
+</body>
+</html>

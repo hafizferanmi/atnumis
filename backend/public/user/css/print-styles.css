@@ -1,0 +1,112 @@
+/*
+	
+	PRINT STYLES
+	------------
+
+	Default template to work with the styles for Auction Marketer platform.
+
+*/
+
+body {
+	padding-top: 0 !important;
+}
+
+body .header-wrapper {
+	position: relative;
+}
+
+.catalogue-details .catalogue-details-holder .catalogue-details__title {
+	margin-top: 10px;
+}
+
+.filter-section {
+	display: none !important;
+}
+
+.catalogue-details .catalogue-details-holder .catalogue-details__vtimes {
+	display: none;
+}
+
+.catalogue-details .catalogue-details-holder .catalogue-details__buttons {
+	display: none;
+}
+
+.navigation {
+	display: none !important;
+}
+
+.header-wrapper .header-left {
+	visibility: hidden !important;
+}
+
+.header-wrapper .header-right {
+	visibility: hidden !important;
+}
+
+.footer .footer-right .moduletable {
+	visibility: hidden;
+}
+
+.footer .footer-right .social-icons {
+	visibility: hidden;
+}
+
+.footer .footer-right {
+	display: none !important;
+}
+
+.footer .footer-center-am {
+	text-align: right !important;
+	width: 47% !important;
+}
+
+.footer .footer-center-am a {
+	width: 100% !important;
+	margin-top: -20px !important;
+}
+
+.lot-actions a {
+	visibility: hidden !important;
+}
+
+.ul-grid .lot-item {
+	max-height: 400px !important;
+}
+
+.calendar-filters-container {
+	display: none !important;
+}
+
+body.home .main-banner-container {
+	display: none !important;
+}
+
+.slides-navigation {
+	display: none !important;
+}
+
+.main-banner-container .banner-slides .banner__content > .view-catalogue-banner-btn {
+	display: none !important;
+}
+
+.footer-sign-up {
+	display: none !important;
+}
+
+.upcoming-auctions .upcoming-auctions_auction .upcoming-auctions_content a {
+	display: none !important;
+}
+
+.footer-hold .footer .footer-left {
+	width: 100% !important;
+	text-align: center;
+}
+
+.footer-hold .footer .footer-logo {
+	width: 100% !important;
+	text-align: center;
+}
+
+.auction-cal__detail .auction-cal__buttons > a {
+	display: none !important;
+}
